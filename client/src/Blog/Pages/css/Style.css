@@ -1,0 +1,448 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  background-color: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 6rem 1rem 4rem;
+  color: white;
+  /* ✅ Background Image with Overlay */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.505)),
+    url("../../../assets/image//ai-digital-marketing-tools-2025-banner.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+p {
+  max-width: 800px;
+  margin: 1rem auto;
+  text-align: justify;
+}
+
+.cta a {
+  display: inline-block;
+  background-color: #f0b100;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 1.5rem;
+}
+
+.cta a:hover {
+  background-color: #ce9907;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  header {
+    padding: 4rem 1rem 2rem;
+  }
+}
+
+/* section 1 */
+
+
+/* Section 1 Hero */
+.section1 {
+  padding: 4rem 2rem;
+  background-color: #fefefe;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.hero-left img {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-right {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-right h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.hero-right p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.cta a {
+  display: inline-block;
+  background-color: #f0b100;
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.cta a:hover {
+  background-color: #ce9907;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero-left img {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-right h1 {
+    font-size: 2rem;
+  }
+  .hero-left img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-right h1 {
+    font-size: 1.6rem;
+  }
+  .hero-right p {
+    font-size: 1rem;
+  }
+  .cta a {
+    padding: 0.7rem 1.5rem;
+  }
+}
+
+
+/* section2 */
+/* AI Section */
+.ai-section {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.ai-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.ai-section .ai-image img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.ai-section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+  text-align: justify;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ai-section h2 {
+    font-size: 1.6rem;
+  }
+  .ai-section p {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+
+/* section3 */
+/* AI Section */
+.canva-section {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.canva-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+.canva-section h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.canva-section .ai-image img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.canva-section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+  text-align: justify;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .canva-section h2 {
+    font-size: 1.6rem;
+  }
+  .canva-section p {
+    font-size: 1rem;
+  }
+}
+
+
+
+/* ------------------------ */
+/* Conclusion Section */
+.conclusion-section {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #fdf6e3; /* soft highlight */
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Heading (H2) */
+.conclusion-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+/* Paragraph */
+.conclusion-section p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* CTA Button */
+.conclusion-section .cta a {
+  display: inline-block;
+  background-color: #f0b100;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.conclusion-section .cta a:hover {
+  background-color: #ce9907;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .conclusion-section h2 {
+    font-size: 1.6rem;
+  }
+  .conclusion-section p {
+    font-size: 1rem;
+  }
+  .conclusion-section .cta a {
+    padding: 0.7rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .conclusion-section h2 {
+    font-size: 1.5rem;
+  }
+  .conclusion-section p {
+    font-size: 0.95rem;
+  }
+}
+
+
+
+
+
+/* Main Footer */
+.footer {
+  background: #111827;
+  color: white;
+  padding: 60px 0 40px;
+  margin-top: 50px;
+}
+
+/* Container */
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Grid Layout (2 Columns) */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px; /* gap for mobile */
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1.5fr 1fr; /* About + Contact */
+    gap: 80px; /* big gap for desktop */
+  }
+}
+
+/* About Section */
+.footer-about {
+  max-width: 500px; /* prevent long lines */
+}
+
+.footer-logo {
+  height: 90px;
+}
+
+.footer-text {
+  color: #d1d5db;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Social Icons */
+.footer-social a {
+  color: #d1d5db;
+  font-size: 20px;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: white;
+}
+
+/* Section Titles */
+.footer-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* List styles */
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list li {
+  margin-bottom: 10px;
+  color: #d1d5db;
+}
+
+.footer-list a {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-list a:hover {
+  color: white;
+}
+
+/* WhatsApp link */
+.whatsapp-link {
+  color: #60a5fa;
+}
+
+.whatsapp-link:hover {
+  color: #93c5fd;
+}
+
+/* Bottom Area */
+.footer-bottom {
+  border-top: 1px solid #1f2937;
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: start; /* center copyright */
+  color: #d1d5db;
+  width: 100%; /* Ensure full width within container */
+}
+
+.footer-bottom p {
+  text-align: start; /* Explicitly center text inside <p> */
+  margin: 0; /* Reset any default margins for clean centering */
+}
+
+.footer-bottom a {
+  color: #dabb0e;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-bottom a:hover {
+  color: white;
+}
+
+.footer-link {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: white;
+  text-decoration: underline;
+}
