@@ -1,6 +1,20 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import "./css/Style.css";
+import { Link } from "react-router-dom";
+import "../../Blog/Pages/css/Style.css"
+import {
+  ChevronRight,
+  MessageSquareText,
+  User,
+  Calendar,
+  Monitor,
+  CheckCircle,
+  MessageCircle,
+  Facebook,
+  Instagram,
+  Linkedin,
+  Share2
+} from "lucide-react";
 
 // Images
 import Image1 from "../../assets/image/live1.png";
@@ -13,11 +27,13 @@ import Image7 from "../../assets/image/img7.png";
 import Image8 from "../../assets/image/img8.png";
 import Image9 from "../../assets/image/img9.png";
 import Logo from "../../assets/image/footer.png";
-
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+import bmlogo from "../../assets/blog/logo.png";
 
 export const Digitalmarketing = () => {
-  // JSON-LD Schema Definition
+  const whatsappUrl =
+    "https://wa.me/919944940051?text=Hi%2C%20I%20want%20to%20join%20the%202025%20AI%20Digital%20Marketing%20Course.%20Please%20share%20the%20full%20details.";
+
+  // Schema Data
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -25,12 +41,9 @@ export const Digitalmarketing = () => {
       "@type": "WebPage",
       "@id": "https://bmacademy.in/blog/top-ai-tools-digital-marketing-course-2025",
     },
-    headline:
-      "Top AI Tools You’ll Learn in Our Digital Marketing AI Course (2025)",
-    description:
-      "Learn Canva AI, ChatGPT, Jasper, Google Ads AI & Meta Advantage+ in our 2025 Digital Marketing AI Course. Boost your marketing career with AI-powered tools.",
-    image:
-      "https://thebmacademy.com/blog/image/ai-digital-marketing-tools-2025-banner.png",
+    headline: "Top AI Tools You’ll Learn in Our Digital Marketing AI Course (2025)",
+    description: "Learn Canva AI, ChatGPT, Jasper, Google Ads AI & Meta Advantage+ in our 2025 Digital Marketing AI Course.",
+    image: "https://thebmacademy.com/blog/image/ai-digital-marketing-tools-2025-banner.png",
     author: {
       "@type": "Organization",
       name: "BM Academy",
@@ -47,402 +60,395 @@ export const Digitalmarketing = () => {
     datePublished: "2025-10-13",
     dateModified: "2025-10-13",
     articleSection: "Digital Marketing AI Course",
-    keywords: [
-      "AI tools for digital marketing",
-      "digital marketing course 2025",
-      "Canva AI",
-      "ChatGPT marketing",
-      "AI-powered marketing tools",
-      "Jasper AI",
-      "Google Ads AI",
-      "Meta Advantage+ AI",
-    ],
   };
 
   return (
-    <div>
-      {/* SEO METADATA SECTION */}
+    <div className="min-h-screen bg-gray-50 font-sans text-gray-800">
       <Helmet>
-        <title>
-          Top AI Tools You’ll Learn in Our Digital Marketing Course (2025)
-        </title>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        {/* Primary SEO Meta Tags */}
-        <meta
-          name="title"
-          content="Best AI Tools for Digital Marketing 2025 | Learn Canva AI, ChatGPT & More"
-        />
-        <meta
-          name="description"
-          content="Learn Canva AI, ChatGPT, Jasper, Google Ads AI & more in our 2025 Digital Marketing AI Course. Master AI tools to create smarter campaigns and boost your career."
-        />
-        <link
-          rel="canonical"
-          href="https://thebmacademy.com/blog/top-ai-tools-digital-marketing-course-2025.html"
-        />
-        <meta
-          name="keywords"
-          content="AI tools for digital marketing, Digital marketing AI course, Canva AI, ChatGPT for marketing, Best AI tools 2025"
-        />
-
-        {/* Open Graph */}
-        <meta property="og:type" content="article" />
-        <meta
-          property="og:title"
-          content="Learn Digital Marketing the AI Way in 2025"
-        />
-        <meta
-          property="og:description"
-          content="Master Canva AI, ChatGPT, Jasper, Google Ads AI, and Meta Advantage+ in our AI-powered Digital Marketing Course (2025)."
-        />
-        <meta
-          property="og:image"
-          content="https://thebmacademy.com/blog/image/ai-digital-marketing-tools-2025-banner.png"
-        />
-        <meta property="og:site_name" content="BM Academy" />
-
-        {/* External Styles */}
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        />
-        <link
-          rel="shortcut icon"
-          href="../assets/images/BM Logo Final-01.png"
-        />
-
-        {/* Schema.org JSON-LD */}
-        <script type="application/ld+json">
-          {JSON.stringify(schemaData)}
-        </script>
+        <title>Top AI Tools You’ll Learn in Our Digital Marketing Course (2025)</title>
+        <meta name="description" content="Learn Canva AI, ChatGPT, Jasper, Google Ads AI & more in our 2025 Digital Marketing AI Course." />
+        <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
 
-      {/* PAGE CONTENT */}
-      <header>
-        <h1>
-          Top AI Tools You’ll Learn in Our Digital Marketing AI Course (2025)
-        </h1>
-        <div className="cta">
-          <a
-            href="https://wa.me/919944940051?text=Hi%2C%20I%20want%20to%20join%20the%202025%20AI%20Digital%20Marketing%20Course.%20Please%20share%20the%20full%20details."
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read more
-          </a>
-        </div>
-      </header>
+      <div className="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-12 gap-10">
+        
+        {/* --- Main Content Area --- */}
+        <main className="lg:col-span-8">
+          
+          {/* Breadcrumb */}
+          <nav className="flex mb-6 text-sm text-gray-500" aria-label="Breadcrumb">
+            <ol className="inline-flex items-center space-x-1 md:space-x-3">
+              <li className="inline-flex items-center">
+                <Link to="/" className="inline-flex items-center hover:text-blue-600 transition-colors">
+                  <MessageSquareText className="w-4 h-4 mr-2" />
+                  Blog
+                </Link>
+              </li>
+              <li aria-current="page">
+                <div className="flex items-center">
+                  <ChevronRight className="w-4 h-4 text-gray-400" />
+                  <span className="ml-1 md:ml-2 text-gray-700 font-medium truncate max-w-[150px] md:max-w-none">
+                    Digital Marketing AI
+                  </span>
+                </div>
+              </li>
+            </ol>
+          </nav>
 
-      <section className="section1">
-        <div className="hero-container">
-          <div className="hero-left">
-            <img
-              src={Image1}
-              alt="Student learning AI-powered digital marketing tools on laptop"
-            />
-          </div>
-          <div className="hero-right">
-            <h1>Learn Digital Marketing the AI Way in 2025</h1>
-            <p>
-              Master the latest AI tools to create smarter campaigns, content,
-              and strategies.
-            </p>
-            <div className="cta">
-              <a
-                href="https://wa.me/919944940051?text=Hi%2C%20I%20want%20to%20join%20the%202025%20AI%20Digital%20Marketing%20Course.%20Please%20share%20the%20full%20details."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Join the 2025 AI Digital Marketing Course
-              </a>
+          {/* Header */}
+          <div className="mb-8">
+            <div className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full font-semibold uppercase tracking-wide mb-4">
+              Course Details
             </div>
-          </div>
-        </div>
-      </section>
+            <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight mb-6">
+              Top AI Tools You’ll Learn in Our Digital Marketing AI Course (2025)
+            </h1>
 
-      <section className="ai-section">
-        <h2>Why AI is the Future of Digital Marketing</h2>
-        <div className="ai-image">
-          <img
-            src={Image2}
-            alt="Infographic showing difference between traditional marketing and AI-powered marketing"
-          />
-        </div>
-        <p>
-          Digital Marketing is evolving fast — AI tools are now at the core of
-          successful campaigns. From content creation and design to ad
-          optimization and analytics, AI helps marketers work smarter and
-          faster. Our course helps you learn practical AI skills to stay ahead
-          in 2025.
-        </p>
-      </section>
-
-      <section className="canva-section">
-        <h2 className="ai-main-heading">Top AI Tools You'll Learn</h2>
-
-        <div className="ai-content-wrapper">
-          <h3 className="ai-sub-heading">1. The Future of Marketing is AI</h3>
-
-          <p className="ai-tool-description">
-            <strong>Uses:</strong> Create social media posts, banners, videos,
-            and presentations in minutes.
-            <br />
-            <strong>Trending Use:</strong> AI suggests layouts, colors, and
-            content ideas automatically.
-            <br />
-            <strong>Future Potential:</strong> Visual content will dominate
-            marketing; Canva AI knowledge gives you a career edge.
-          </p>
-
-          <div className="ai-image">
-            <img src={Image3} alt="Canva AI auto-design feature" />
-          </div>
-        </div>
-      </section>
-
-      <section className="canva-section">
-        <div className="ai-content-wrapper">
-          <h3 className="ai-sub-heading">
-            2. ChatGPT – Content Creation & Strategy
-          </h3>
-
-          <p className="ai-tool-description">
-            <strong>Uses:</strong> Generate ad copies, blog posts, email
-            campaigns, and marketing strategies.
-            <br />
-            <strong>Trending Use:</strong> Saves time and improves content
-            quality.
-            <br />
-            <strong>Future Potential:</strong> AI copywriting is becoming
-            standard; ChatGPT skills open freelance & corporate opportunities.
-          </p>
-
-          <div className="ai-image">
-            <img
-              src={Image4}
-              alt="ChatGPT generating marketing content for digital campaign"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="canva-section">
-        <div className="ai-content-wrapper">
-          <h3 className="ai-sub-heading">
-            3. Jasper AI – AI-Powered Marketing Assistant
-          </h3>
-
-          <p className="ai-tool-description">
-            <strong>Uses:</strong> Personalized social media posts, product
-            descriptions, and email campaigns. <br />
-            <strong>Trending Use:</strong> Understands audience tone and
-            context.
-            <br />
-            <strong>Future Potential:</strong> Scalable campaigns and marketing
-            automation.
-          </p>
-
-          <div className="ai-image">
-            <img
-              src={Image5}
-              alt="Jasper AI dashboard with marketing templates"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="canva-section">
-        <div className="ai-content-wrapper">
-          <h3 className="ai-sub-heading">4. Google Ads AI – Smarter Advertising</h3>
-
-          <p className="ai-tool-description">
-            <strong>Uses:</strong> Optimize search and display campaigns with AI
-            suggestions. <br />
-            <strong>Trending Use:</strong> AI predicts audience conversion,
-            reducing cost per lead. <br />
-            <strong>Future Potential:</strong> Paid marketing is shifting to
-            AI-driven targeting and bidding.
-          </p>
-
-          <div className="ai-image">
-            <img
-              src={Image6}
-              alt="Google Ads AI interface showing conversion predictions."
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="canva-section">
-        <div className="ai-content-wrapper">
-          <h3 className="ai-sub-heading">
-            5. Meta Advantage+ AI – Social Media Optimization
-          </h3>
-
-          <p className="ai-tool-description">
-            <strong>Uses:</strong> Optimizes Facebook & Instagram ads
-            automatically. <br />
-            <strong>Trending Use:</strong> AI tests creatives and targets the
-            best audience. <br />
-            <strong>Future Potential:</strong> Social media marketing will rely
-            on AI analytics and optimization
-          </p>
-
-          <div className="ai-image">
-            <img
-              src={Image7}
-              alt="Meta Ads Manager dashboard showing Advantage+ automation"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="canva-section">
-        <div className="ai-content-wrapper">
-          <h3 className="ai-sub-heading">
-            6. Notion AI – Plan & Organize Campaigns
-          </h3>
-
-          <p className="ai-tool-description">
-            <strong>Uses:</strong> Create campaign plans, marketing calendars,
-            and track projects. Summarizes ideas & generates outlines. <br />
-            <strong>Trending Use:</strong> Reduces repetitive work for marketers.
-            <br />
-            <strong>Future Potential:</strong> AI productivity tools will be
-            essential in every marketing role.
-          </p>
-
-          <div className="ai-image">
-            <img
-              src={Image8}
-              alt="Notion AI workspace showing marketing campaign plan"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="ai-section">
-        <h2>Why This Course is Perfect for Students</h2>
-        <div className="ai-image">
-          <img
-            src={Image9}
-            alt="Student receiving certificate with laptop showing AI tools"
-          />
-        </div>
-        <p>
-          <strong>Hands-on AI Learning:</strong> Practical use of top marketing
-          tools.
-          <br />
-          <strong>Certificate Provided (Hard Copy):</strong> Boosts your resume
-          & career.
-          <br />
-          <strong>Career Guidance & Free Demo:</strong> Prepare for real
-          marketing jobs.
-        </p>
-      </section>
-
-      <section className="conclusion-section">
-        <h2>Future-Proof Your Marketing Skills</h2>
-
-        <p>
-          Digital Marketing + AI is not just a trend — it’s the future of every
-          marketing career. Learn these tools now to create smarter campaigns,
-          save time, and excel in your career.
-        </p>
-
-        <div className="cta">
-          <a
-            href="https://wa.me/919944940051?text=Hi%2C%20I%20want%20to%20join%20the%202025%20AI%20Digital%20Marketing%20Course.%20Please%20share%20the%20full%20details."
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Enroll Now | Get Certified in AI-Powered Digital Marketing (2025)
-          </a>
-        </div>
-      </section>
-
-      <footer className="footer">
-        <div className="footer-container">
-          <div className="footer-grid">
-            <div className="footer-about">
-              <img src={Logo} alt="BM Academy Logo" className="footer-logo" />
-              <p className="footer-text">
-                BM Academy offers hands-on training in courses like Digital
-                Marketing, Web Development, and Cloud Computing, designed to
-                equip students with essential skills for today's industries.
-                With expert guidance and career support, we help you unlock your
-                potential and achieve professional growth.
-              </p>
-              <div className="footer-social flex items-center gap-4 text-white">
-                <a
-                  href="https://www.facebook.com/people/BM-Academy/61566753898165/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-yellow-300 transition"
-                >
-                  <Facebook className="w-6 h-6" />
-                </a>
-
-                <a
-                  href="https://www.instagram.com/bmacademypondy?igsh=MTYxcHNscDZvdDR0cA=="
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-yellow-300 transition"
-                >
-                  <Instagram className="w-6 h-6" />
-                </a>
-
-                <a
-                  href="https://www.linkedin.com/company/bm-academypondy/about/?viewAsMember=true"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-yellow-300 transition"
-                >
-                  <Linkedin className="w-6 h-6" />
-                </a>
+            {/* Meta */}
+            <div className="flex items-center flex-wrap gap-4 text-gray-500 text-sm border-b border-gray-200 pb-6 pt-3">
+              <div className="flex items-center">
+                <User className="w-4 h-4 mr-2" />
+                <span>BM Academy Team</span>
+              </div>
+              <div className="flex items-center">
+                <Calendar className="w-4 h-4 mr-2" />
+                <span>Oct 13, 2025</span>
               </div>
             </div>
-
-            <div className="footer-section">
-              <h3 className="footer-title">Contact Us</h3>
-              <ul className="footer-list">
-                <li>
-                  <span className="label">Phone:</span>
-                  <a href="tel:+919944940051" className="contact-link">
-                    +91 99449 40051
-                  </a>
-                </li>
-
-                <li>
-                  <span className="label">Address:</span>
-                  <a className="contact-link">
-                    No: 252, 2nd Floor, M G Road, Kottakuppam, Vanur, Tamil Nadu
-                    605104
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
 
-          <div className="footer-bottom">
-            <p>
-              &copy; <span>{new Date().getFullYear()}</span>
+          {/* Featured Image */}
+          <div className="mb-8 rounded-xl overflow-hidden shadow-lg bg-gray-200 h-64 md:h-96 w-full relative">
+            <img
+              src={Image1}
+              alt="Student learning AI marketing"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* Article Body */}
+          <article className="prose prose-lg max-w-none text-gray-700 space-y-12">
+            
+            {/* Intro Section */}
+            <section>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                Learn Digital Marketing the AI Way in 2025
+              </h2>
+              <p>
+                Master the latest AI tools to create smarter campaigns, content, and strategies. 
+                Digital Marketing is evolving fast — AI tools are now at the core of successful campaigns.
+              </p>
+              
+              <div className="my-6 rounded-lg overflow-hidden shadow-md w-full">
+                <img
+                  src={Image2}
+                  alt="Traditional vs AI marketing"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+
+              <p>
+                 From content creation and design to ad optimization and analytics, AI helps marketers work smarter and faster.
+                 Our course helps you learn practical AI skills to stay ahead in 2025.
+              </p>
+            </section>
+
+            {/* Tool 1 */}
+            <section className="border-t border-gray-200 pt-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                1. Canva AI – The Future of Marketing Design
+              </h2>
+              <img
+                src={Image3}
+                alt="Canva AI"
+                className="w-full rounded-xl shadow-md my-6"
+              />
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <ul className="space-y-3">
+                    <li><strong>Uses:</strong> Create social media posts, banners, videos, and presentations in minutes.</li>
+                    <li><strong>Trending Use:</strong> AI suggests layouts, colors, and content ideas automatically.</li>
+                    <li><strong>Future Potential:</strong> Visual content will dominate marketing; Canva AI knowledge gives you a career edge.</li>
+                </ul>
+              </div>
+            </section>
+
+            {/* Tool 2 */}
+            <section className="border-t border-gray-200 pt-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                2. ChatGPT – Content Creation & Strategy
+              </h2>
+              <img
+                src={Image4}
+                alt="ChatGPT Marketing"
+                className="w-full rounded-xl shadow-md my-6"
+              />
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <ul className="space-y-3">
+                    <li><strong>Uses:</strong> Generate ad copies, blog posts, email campaigns, and marketing strategies.</li>
+                    <li><strong>Trending Use:</strong> Saves time and improves content quality.</li>
+                    <li><strong>Future Potential:</strong> AI copywriting is becoming standard; ChatGPT skills open freelance & corporate opportunities.</li>
+                </ul>
+              </div>
+            </section>
+
+            {/* Tool 3 */}
+            <section className="border-t border-gray-200 pt-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                3. Jasper AI – AI-Powered Marketing Assistant
+              </h2>
+              <img
+                src={Image5}
+                alt="Jasper AI"
+                className="w-full rounded-xl shadow-md my-6"
+              />
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <ul className="space-y-3">
+                    <li><strong>Uses:</strong> Personalized social media posts, product descriptions, and email campaigns.</li>
+                    <li><strong>Trending Use:</strong> Understands audience tone and context.</li>
+                    <li><strong>Future Potential:</strong> Scalable campaigns and marketing automation.</li>
+                </ul>
+              </div>
+            </section>
+
+            {/* Tool 4 */}
+            <section className="border-t border-gray-200 pt-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                4. Google Ads AI – Smarter Advertising
+              </h2>
+              <img
+                src={Image6}
+                alt="Google Ads AI"
+                className="w-full rounded-xl shadow-md my-6"
+              />
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <ul className="space-y-3">
+                    <li><strong>Uses:</strong> Optimize search and display campaigns with AI suggestions.</li>
+                    <li><strong>Trending Use:</strong> AI predicts audience conversion, reducing cost per lead.</li>
+                    <li><strong>Future Potential:</strong> Paid marketing is shifting to AI-driven targeting and bidding.</li>
+                </ul>
+              </div>
+            </section>
+
+            {/* Tool 5 */}
+            <section className="border-t border-gray-200 pt-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                5. Meta Advantage+ AI – Social Media Optimization
+              </h2>
+              <img
+                src={Image7}
+                alt="Meta Advantage+"
+                className="w-full rounded-xl shadow-md my-6"
+              />
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <ul className="space-y-3">
+                    <li><strong>Uses:</strong> Optimizes Facebook & Instagram ads automatically.</li>
+                    <li><strong>Trending Use:</strong> AI tests creatives and targets the best audience.</li>
+                    <li><strong>Future Potential:</strong> Social media marketing will rely on AI analytics and optimization.</li>
+                </ul>
+              </div>
+            </section>
+
+            {/* Tool 6 */}
+            <section className="border-t border-gray-200 pt-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                6. Notion AI – Plan & Organize Campaigns
+              </h2>
+              <img
+                src={Image8}
+                alt="Notion AI"
+                className="w-full rounded-xl shadow-md my-6"
+              />
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <ul className="space-y-3">
+                    <li><strong>Uses:</strong> Create campaign plans, marketing calendars, and track projects. Summarizes ideas & generates outlines.</li>
+                    <li><strong>Trending Use:</strong> Reduces repetitive work for marketers.</li>
+                    <li><strong>Future Potential:</strong> AI productivity tools will be essential in every marketing role.</li>
+                </ul>
+              </div>
+            </section>
+
+            {/* Why This Course */}
+            <section className="border-t border-gray-200 pt-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                Why This Course is Perfect for Students
+              </h2>
+              <img
+                src={Image9}
+                alt="Students"
+                className="w-full rounded-xl shadow-md my-6"
+              />
+              <div className="space-y-4">
+                  <div className="flex items-start">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
+                    <span><strong>Hands-on AI Learning:</strong> Practical use of top marketing tools.</span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
+                    <span><strong>Certificate Provided (Hard Copy):</strong> Boosts your resume & career.</span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
+                    <span><strong>Career Guidance & Free Demo:</strong> Prepare for real marketing jobs.</span>
+                  </div>
+              </div>
+            </section>
+
+            {/* Conclusion */}
+            <section className="border-t border-gray-200 pt-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                Future-Proof Your Marketing Skills
+              </h2>
+              <p>
+                Digital Marketing + AI is not just a trend — it’s the future of every marketing career. 
+                Learn these tools now to create smarter campaigns, save time, and excel in your career.
+              </p>
+            </section>
+
+          </article>
+
+          {/* CTA */}
+          <div className="mt-12 p-8 bg-gradient-to-r from-blue-700 to-indigo-800 rounded-2xl text-white text-center shadow-xl">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+              Join the 2025 AI Marketing Cohort
+            </h2>
+            <p className="mb-8 text-blue-100 max-w-lg mx-auto leading-relaxed">
+              Don't just learn marketing—learn how to automate it with AI.
+            </p>
+            <div className="flex flex-col md:flex-row justify-center gap-4">
               <a
-                href="https://bmtechx.in/"
+                href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="footer-link"
+                className="inline-flex justify-center items-center bg-green-500 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-green-600 transition-transform transform hover:-translate-y-1 shadow-lg"
               >
-                {" "}
-                BMTechx.in
+                <MessageCircle className="w-6 h-6 mr-2" />
+                Enroll via WhatsApp
               </a>
-              . All Rights Reserved.
+            </div>
+          </div>
+        </main>
+
+        {/* --- Sidebar --- */}
+        <aside className="lg:col-span-4 space-y-8 mt-8 lg:mt-0 lg:sticky lg:top-8 h-fit">
+          <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+            <h3 className="font-bold text-gray-900 mb-4 uppercase text-xs tracking-wider">
+              About BM Academy
+            </h3>
+            <div className="flex items-center space-x-4">
+              <div className="w-20 h-20 rounded-full flex items-center justify-center border-2 border-gray-700 font-bold text-xl overflow-hidden bg-white">
+                <img
+                  src={bmlogo}
+                  alt="BM Academy"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div>
+                <p className="font-bold text-gray-900 text-lg">BM Academy</p>
+              </div>
+            </div>
+            <p className="text-sm text-gray-600 mt-4">
+             BM Academy offers hands-on training in courses like Digital Marketing, Web Development, and Cloud Computing, designed to equip students with essential skills for today's industries. With expert guidance and career support, we help you unlock your potential and achieve professional growth.
             </p>
           </div>
-        </div>
-      </footer>
+
+          <div className="bg-green-50 p-6 rounded-xl border border-gray-200">
+            <h3 className="font-bold text-green-800 mb-2">Have Questions?</h3>
+            <p className="text-sm text-green-700 mb-4">
+              Talk to our counselor today to know more about the syllabus and fee structure.
+            </p>
+            <a
+              href={whatsappUrl}
+              className="text-sm font-semibold text-green-700 underline hover:text-green-800"
+            >
+              Connect instantly &rarr;
+            </a>
+          </div>
+        </aside>
+
+      </div>
+
+        <footer className="footer">
+             <div className="footer-container">
+               <div className="footer-grid">
+                 <div className="footer-about">
+                   <img src={Logo} alt="BM Academy Logo" className="footer-logo" />
+                   <p className="footer-text">
+                     BM Academy offers hands-on training in courses like Digital
+                     Marketing, Web Development, and Cloud Computing, designed to
+                     equip students with essential skills for today's industries.
+                     With expert guidance and career support, we help you unlock your
+                     potential and achieve professional growth.
+                   </p>
+                   <div className="footer-social flex items-center gap-4 text-white">
+                     <a
+                       href="https://www.facebook.com/people/BM-Academy/61566753898165/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="hover:text-yellow-300 transition"
+                     >
+                       <Facebook className="w-6 h-6" />
+                     </a>
+     
+                     <a
+                       href="https://www.instagram.com/bmacademypondy?igsh=MTYxcHNscDZvdDR0cA=="
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="hover:text-yellow-300 transition"
+                     >
+                       <Instagram className="w-6 h-6" />
+                     </a>
+     
+                     <a
+                       href="https://www.linkedin.com/company/bm-academypondy/about/?viewAsMember=true"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="hover:text-yellow-300 transition"
+                     >
+                       <Linkedin className="w-6 h-6" />
+                     </a>
+                   </div>
+                 </div>
+     
+                 <div className="footer-section">
+                   <h3 className="footer-title">Contact Us</h3>
+                   <ul className="footer-list">
+                     <li>
+                       <span className="label">Phone:</span>
+                       <a href="tel:+919944940051" className="contact-link">
+                         +91 99449 40051
+                       </a>
+                     </li>
+     
+                     <li>
+                       <span className="label">Address:</span>
+                       <a className="contact-link">
+                         No: 252, 2nd Floor, M G Road, Kottakuppam, Vanur, Tamil Nadu
+                         605104
+                       </a>
+                     </li>
+                   </ul>
+                 </div>
+               </div>
+     
+               <div className="footer-bottom">
+                 <p>
+                   &copy; <span>{new Date().getFullYear()}</span>
+                   <a
+                     href="https://bmtechx.in/"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="footer-link"
+                   >
+                     {" "}
+                     BMTechx.in
+                   </a>
+                   . All Rights Reserved.
+                 </p>
+               </div>
+             </div>
+           </footer>
     </div>
   );
 };
+
+export default Digitalmarketing;
