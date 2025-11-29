@@ -18,8 +18,7 @@ import {
 import Logo from "../../assets/image/footer.png";
 import bmlogo from "../../assets/blog/logo.png";
 import { Link } from "react-router-dom";
-import "../../Blog/Pages/css/Style.css"
-
+import "../../Blog/Pages/css/Style.css";
 
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 
@@ -40,9 +39,8 @@ const Pondicherryjobs = () => {
   );
 
   return (
-<div className="min-h-screen bg-gray-50 font-sans text-gray-800">
+    <div className="min-h-screen bg-gray-50 font-sans text-gray-800">
       <div className="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-12 gap-10">
-        
         {/* --- Main Content Area (Left Column) --- */}
         <main className="lg:col-span-8">
           {/* --- Breadcrumb Section --- */}
@@ -113,7 +111,8 @@ const Pondicherryjobs = () => {
               </h2>
               <img
                 src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                alt="Market relevant courses" className="rounded-xl"
+                alt="Market relevant courses"
+                className="rounded-xl"
               />
               <p>
                 We don’t run generic coaching. Our courses are built around what
@@ -121,14 +120,23 @@ const Pondicherryjobs = () => {
                 choose from:
               </p>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-4 bg-gray-50 p-4 rounded-lg list-disc pl-5">
-                <li><strong>AI + Digital Marketing Integrated Course</strong></li>
-                <li><strong>AI + Full Stack Development (FSD) Course</strong></li>
-                <li><strong>AI + Video Editing Course</strong></li>
-                <li><strong>AI + Data Analytics (DA) Course</strong></li>
+                <li>
+                  <strong>AI + Digital Marketing Integrated Course</strong>
+                </li>
+                <li>
+                  <strong>AI + Full Stack Development (FSD) Course</strong>
+                </li>
+                <li>
+                  <strong>AI + Video Editing Course</strong>
+                </li>
+                <li>
+                  <strong>AI + Data Analytics (DA) Course</strong>
+                </li>
               </ul>
 
-              <p className="mb-2 underline font-medium">Plus core tracks in:</p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-4">
+              <p className="mb-2 font-bold">Plus core tracks in:</p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-4 pl-4">
                 <div className="flex items-center">
                   <CheckCircle className="w-4 h-4 text-green-500 mr-2" /> AI &
                   Automation
@@ -154,8 +162,11 @@ const Pondicherryjobs = () => {
                   Language & Soft Skills
                 </div>
               </div>
-              <p className="underline font-medium">Each 90‑day course (online or offline) is:</p>
-              <ul className="list-disc pl-5 space-y-1">
+
+              <p className="font-bold">
+                Each 90‑day course (online or offline) is:
+              </p>
+              <ul className="list-disc pl-9  space-y-1">
                 <li>
                   <strong>Practical</strong> – real tools, not just theory
                 </li>
@@ -181,51 +192,75 @@ const Pondicherryjobs = () => {
               </h2>
               <img
                 src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                alt="Project based learning" className="rounded-xl"
+                alt="Project based learning"
+                className="rounded-xl"
               />
               <p>
-                Whether a learner joins <span className="font-bold">online or offline</span>, the learning style is
-                the same: learn by doing. 
+                Whether a learner joins{" "}
+                <span className="font-bold">online or offline</span>, the
+                learning style is the same: learn by doing.
               </p>
-              <p className="font-medium underline">Examples of what students build:</p>
+              <p className="font-bold">
+                Examples of what students build:
+              </p>
               <div className="grid md:grid-cols-2 gap-6 mt-6">
-              <div className="bg-white border-l-3 border-blue-600 rounded-lg shadow hover:shadow-lg transition p-5">
-                <h4 className="font-semibold text-blue-700 text-lg">AI + Digital Marketing</h4>
-                <p className="text-sm text-gray-600 mt-1">
-                  A lead generation and follow-up funnel using AI tools, landing pages, and ads.
-                </p>
+                <div className="bg-white border-l-3 border-blue-600 rounded-lg shadow hover:shadow-lg transition p-5">
+                  <h4 className="font-semibold text-blue-700 text-lg">
+                    AI + Digital Marketing
+                  </h4>
+                  <p className="text-sm text-gray-600 mt-1">
+                    A lead generation and follow-up funnel using AI tools,
+                    landing pages, and ads.
+                  </p>
+                </div>
+
+                <div className="bg-white border-l-3 border-green-600 rounded-lg shadow hover:shadow-lg transition p-5">
+                  <h4 className="font-semibold text-green-700 text-lg">
+                    AI + FSD
+                  </h4>
+                  <p className="text-sm text-gray-600 mt-1">
+                    A portfolio website or mini web app with AI-powered
+                    features.
+                  </p>
+                </div>
+
+                <div className="bg-white border-l-3 border-purple-600 rounded-lg shadow hover:shadow-lg transition p-5">
+                  <h4 className="font-semibold text-purple-700 text-lg">
+                    AI + Video Editing
+                  </h4>
+                  <p className="text-sm text-gray-600 mt-1">
+                    Short-form and long-form videos enhanced with AI for
+                    scripting, editing, and effects.
+                  </p>
+                </div>
+
+                <div className="bg-white border-l-3 border-orange-600 rounded-lg shadow hover:shadow-lg transition p-5">
+                  <h4 className="font-semibold text-orange-700 text-lg">
+                    AI + Data Analytics
+                  </h4>
+                  <p className="text-sm text-gray-600 mt-1">
+                    Dashboards and reports using real or sample business data
+                    with AI-assisted insights.
+                  </p>
+                </div>
               </div>
 
-              <div className="bg-white border-l-3 border-green-600 rounded-lg shadow hover:shadow-lg transition p-5">
-                <h4 className="font-semibold text-green-700 text-lg">AI + FSD</h4>
-                <p className="text-sm text-gray-600 mt-1">
-                  A portfolio website or mini web app with AI-powered features.
-                </p>
-              </div>
-
-              <div className="bg-white border-l-3 border-purple-600 rounded-lg shadow hover:shadow-lg transition p-5">
-                <h4 className="font-semibold text-purple-700 text-lg">AI + Video Editing</h4>
-                <p className="text-sm text-gray-600 mt-1">
-                  Short-form and long-form videos enhanced with AI for scripting, editing, and effects.
-                </p>
-              </div>
-
-              <div className="bg-white border-l-3 border-orange-600 rounded-lg shadow hover:shadow-lg transition p-5">
-                <h4 className="font-semibold text-orange-700 text-lg">AI + Data Analytics</h4>
-                <p className="text-sm text-gray-600 mt-1">
-                  Dashboards and reports using real or sample business data with AI-assisted insights.
-                </p>
-              </div>
-            </div>
-
-              <p className="pt-5 underline font-medium">
+              <p className="pt-5 font-bold">
                 By the end of the 90 days job ready program, each student has:
               </p>
-              <ul className="grid pt-0 grid-cols-1 md:grid-cols-2 gap-2 mb-4 bg-gray-50 p-4 rounded-lg list-disc pl-5">
-                <li className="font-medium"><>AI + Digital Marketing Integrated Course</></li>
-                <li className="font-medium"><>AI + Full Stack Development (FSD) Course</></li>
-                <li className="font-medium"><>AI + Video Editing Course</></li>
-                <li className="font-medium"><>AI + Data Analytics (DA) Course</></li>
+              <ul className="grid pt-0 grid-cols-1 md:grid-cols-2 gap-2 mb-4 bg-gray-50 p-4 rounded-lg list-disc pl-9">
+                <li className="font-medium">
+                  <>AI + Digital Marketing Integrated Course</>
+                </li>
+                <li className="font-medium">
+                  <>AI + Full Stack Development (FSD) Course</>
+                </li>
+                <li className="font-medium">
+                  <>AI + Video Editing Course</>
+                </li>
+                <li className="font-medium">
+                  <>AI + Data Analytics (DA) Course</>
+                </li>
               </ul>
             </section>
 
@@ -236,18 +271,27 @@ const Pondicherryjobs = () => {
               </h2>
               <img
                 src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                alt="Flexible classroom options" className="rounded-xl"
+                alt="Flexible classroom options"
+                className="rounded-xl"
               />
-              <p className="pt-5 underline font-medium">
+              <p className="pt-5 font-bold">
                 Different students have different needs:
               </p>
-              <ul className="pt-0 grid grid-cols-1 gap-2 mb-4 bg-gray-50 p-4 rounded-lg list-disc pl-5">
-                <li className="font-medium"><>Some attend offline classes in Pondicherry</></li>
-                <li className="font-medium"><>Some prefer online classes from home</></li>
-                <li className="font-medium"><>Some are working or in college and need flexible timings</></li>
+              <ul className="pt-0 grid grid-cols-1 gap-2 mb-4 bg-gray-50 p-4 rounded-lg list-disc pl-9">
+                <li className="font-medium">
+                  <>Some attend offline classes in Pondicherry</>
+                </li>
+                <li className="font-medium">
+                  <>Some prefer online classes from home</>
+                </li>
+                <li className="font-medium">
+                  <>Some are working or in college and need flexible timings</>
+                </li>
               </ul>
-              <p className="mt-2 font-medium underline">So BM Academy offers:</p>
-              <ul className="space-y-3 mt-3">
+              <p className="mt-2 font-bold">
+                So BM Academy offers:
+              </p>
+              <ul className="space-y-3 mt-3 pl-4">
                 <li className="flex items-start">
                   <Monitor className="w-5 h-5 text-blue-500 mr-3 flex-shrink-0 mt-1" />
                   <span>
@@ -271,92 +315,78 @@ const Pondicherryjobs = () => {
                 </li>
               </ul>
               <p className="mt-3 text-sm">
-                The <span className="font-bold">syllabus, projects, and placement support</span> remain the same in
-                both modes.
+                The{" "}
+                <span className="font-bold">
+                  syllabus, projects, and placement support
+                </span>{" "}
+                remain the same in both modes.
               </p>
             </section>
 
             {/* Section 4 */}
-            <section>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                4. Clear 90‑Day Roadmap
-              </h2>
-              <img
-                src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                alt="Planning roadmap" className="rounded-xl"
-              />
-              <p className="underline font-medium">Every student gets a clear, structured plan.</p>
-              <div className="relative ml-3 space-y-8 mt-6">
-                <div className="ml-6 relative">
-                  <span className="absolute -left-[38px] bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">
-                    1
-                  </span>
-                  <h3 className="font-bold text-lg">Days 1–15: Foundations</h3>
-                  <p className="text-sm text-gray-600">
-                    Understand tools and core concepts. 
-                  </p>
-                  <p className="text-sm text-gray-600">
-                    Small tasks to remove
-                    fear and build confidence.
-                  </p>
-                </div>
-                <div className="ml-6 relative">
-                  <span className="absolute -left-[38px] bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">
-                    2
-                  </span>
-                  <h3 className="font-bold text-lg">
-                    Days 16–45: Skill Building
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    Regular practice (daily or alternate days).
-                  </p>
-                  <p className="text-sm text-gray-600">
-                    Mini‑projects and assignments.
-                  </p>
-                  <p className="text-sm text-gray-600">
-                    Mentor feedback in live sessions or via online support.
-                  </p>
-                </div>
-                <div className="ml-6 relative">
-                  <span className="absolute -left-[38px] bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">
-                    3
-                  </span>
-                  <h3 className="font-bold text-lg">
-                    Days 46–75: Major Project
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                   One main project that becomes the center of the portfolio
-                  </p>
-                  <p className="text-sm text-gray-600">
-                   Weekly review calls or in‑person check‑ins
-                  </p>
-                </div>
-                <div className="ml-6 relative">
-                  <span className="absolute -left-[38px] bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">
-                    4
-                  </span>
-                  <h3 className="font-bold text-lg">
-                    Days 76–90: Job‑Readiness
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    Resume building (focused on skills and projects)
-                  </p>
-                  <p className="text-sm text-gray-600">
-                    Mock interviews and HR questions
-                  </p>
-                  <p className="text-sm text-gray-600">
-                    LinkedIn profile setup
-                  </p>
-                  <p className="text-sm text-gray-600">
-                    Guidance on how and where to apply
-                  </p>
-                </div>
-                 <p className="mt-3 text-sm">
-                The <span className="font-bold">syllabus, projects, and placement support</span> remain the same in
-                both modes.
-              </p>
-              </div>
-            </section>
+           <section>
+  <h2 className="text-2xl font-bold text-gray-900 mb-4">
+    4. Clear 90-Day Roadmap
+  </h2>
+
+  <img
+    src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+    alt="Planning roadmap"
+    className="rounded-xl"
+  />
+
+  <p className="font-bold mt-3">Every student gets a clear, structured plan.</p>
+
+  <div className="space-y-6 mt-6 ml-4">
+    <div className="flex items-start gap-3">
+      <span className="text-blue-600 text-lg font-bold">➤</span>
+      <div>
+        <h3 className="font-bold text-lg">Days 1–15: Foundations</h3>
+        <p className="text-sm text-gray-600">Understand tools and core concepts.</p>
+        <p className="text-sm text-gray-600">Small tasks to build confidence.</p>
+      </div>
+    </div>
+
+    <div className="flex items-start gap-3">
+      <span className="text-blue-600 text-lg font-bold">➤</span>
+      <div>
+        <h3 className="font-bold text-lg">Days 16–45: Skill Building</h3>
+        <p className="text-sm text-gray-600">Regular practice (daily or alternate days).</p>
+        <p className="text-sm text-gray-600">Mini-projects and assignments.</p>
+        <p className="text-sm text-gray-600">
+          Mentor feedback in live sessions or online support.
+        </p>
+      </div>
+    </div>
+
+    <div className="flex items-start gap-3">
+      <span className="text-blue-600 text-lg font-bold">➤</span>
+      <div>
+        <h3 className="font-bold text-lg">Days 46–75: Major Project</h3>
+        <p className="text-sm text-gray-600">
+          One main project that becomes the center of your portfolio.
+        </p>
+        <p className="text-sm text-gray-600">Weekly review calls or check-ins.</p>
+      </div>
+    </div>
+
+    <div className="flex items-start gap-3">
+      <span className="text-blue-600 text-lg font-bold">➤</span>
+      <div>
+        <h3 className="font-bold text-lg">Days 76–90: Job-Readiness</h3>
+        <p className="text-sm text-gray-600">Resume building focused on skills.</p>
+        <p className="text-sm text-gray-600">Mock interviews and HR questions.</p>
+        <p className="text-sm text-gray-600">LinkedIn profile setup.</p>
+        <p className="text-sm text-gray-600">Guidance on where and how to apply.</p>
+      </div>
+    </div>
+  </div>
+
+  <p className="mt-3 text-sm">
+    The <span className="font-bold">syllabus, projects, and placement support</span> remain the same in both modes.
+  </p>
+</section>
+
 
             {/* Section 5 */}
             <section>
@@ -365,30 +395,40 @@ const Pondicherryjobs = () => {
               </h2>
               <img
                 src="https://images.pexels.com/photos/9052131/pexels-photo-9052131.jpeg"
-                alt="Job interview handshake" className="rounded-xl"
+                alt="Job interview handshake"
+                className="rounded-xl"
               />
               <p>
-                BM Academy connects learning to <span className="font-bold">real job opportunities.</span> Placement support is available for:
+                BM Academy connects learning to{" "}
+                <span className="font-bold">real job opportunities.</span>{" "}
+                Placement support is available for:
               </p>
-              <ul className="pt-0 grid grid-cols-1 gap-2 mb-4 bg-gray-50 p-4 rounded-lg list-disc pl-5">
-                <li className="font-medium">AI + Digital Marketing Integrated Course</li>
+              <ul className="pt-0 grid grid-cols-1 gap-2 mb-4 bg-gray-50 p-4 rounded-lg list-disc pl-9">
+                <li className="font-medium">
+                  AI + Digital Marketing Integrated Course
+                </li>
                 <li className="font-medium">AI + FSD Course</li>
                 <li className="font-medium">AI + Video Editing Course</li>
                 <li className="font-medium">AI + Data Analytics Course</li>
               </ul>
 
-              <p className="font-medium underline">We actively:</p>
-              <ul className="list-disc pl-5 space-y-2 mt-2">
+              <p className="font-bold">We actively:</p>
+              <ul className="list-disc pl-9 space-y-2 mt-2">
                 <li>
-                  Maintain a list of <span className="font-bold">50+ companies</span> in and around Pondicherry
-                  (IT, digital marketing, education, hospitality, startups).
+                  Maintain a list of{" "}
+                  <span className="font-bold">50+ companies</span> in and around
+                  Pondicherry (IT, digital marketing, education, hospitality,
+                  startups).
                 </li>
                 <li>
-                  Offer <span className="font-bold">low‑risk hiring options</span> to companies so they are open to
-                  freshers.
+                  Offer{" "}
+                  <span className="font-bold">low‑risk hiring options</span> to
+                  companies so they are open to freshers.
                 </li>
                 <li>
-                  Share students’ <span className="font-bold">digital portfolios</span> with hiring partners.
+                  Share students’{" "}
+                  <span className="font-bold">digital portfolios</span> with
+                  hiring partners.
                 </li>
                 <li>
                   Track student success even after joining (30 / 90 / 180 days).
@@ -397,8 +437,8 @@ const Pondicherryjobs = () => {
               <div className="bg-green-50 p-4 rounded-lg mt-4 border border-green-100 text-center">
                 <p className="font-bold text-green-800">Success Rate: ~90%</p>
                 <p className="text-sm text-green-700">
-                  For students who complete the course, projects, and interview
-                  practice seriously.
+                  For students who complete the course, projects, and interview practice seriously, the
+                  placement success rate is around 90%.
                 </p>
               </div>
             </section>
@@ -410,19 +450,31 @@ const Pondicherryjobs = () => {
               </h2>
               <img
                 src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                alt="Mentoring session" className="rounded-xl"
+                alt="Mentoring session"
+                className="rounded-xl"
               />
               <p>
-                Many students feel shy, under‑confident, or scared of technology. BM Academy addresses this with:
+                Many students feel shy, under‑confident, or scared of
+                technology. BM Academy addresses this with:
               </p>
-              <ul className="pt-0 grid grid-cols-1 gap-2 mb-4 bg-gray-50 p-4 rounded-lg list-disc pl-5">
-                <li className="font-medium">Small batches (online and offline)</li>
+              <ul className="pt-0 grid grid-cols-1 gap-2 mb-4 bg-gray-50 p-4 rounded-lg list-disc pl-9">
+                <li className="font-medium">
+                  Small batches (online and offline)
+                </li>
                 <li className="font-medium">1‑to‑1 doubt clearing</li>
-                <li className="font-medium">Extra support for basics and weak areas</li>
-                <li className="font-medium">Simple explanations in English + local language when needed</li>
+                <li className="font-medium">
+                  Extra support for basics and weak areas
+                </li>
+                <li className="font-medium">
+                  Simple explanations in English + local language when needed
+                </li>
               </ul>
               <p className="mt-2">
-                Trainers focus on making students <span className="font-bold">comfortable, confident, and employable,</span> not just finishing the syllabus.
+                Trainers focus on making students{" "}
+                <span className="font-bold">
+                  comfortable, confident, and employable,
+                </span>{" "}
+                not just finishing the syllabus.
               </p>
             </section>
 
@@ -433,20 +485,30 @@ const Pondicherryjobs = () => {
               </h2>
               <img
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                alt="Data and analytics tools" className="rounded-xl"
+                alt="Data and analytics tools"
+                className="rounded-xl"
               />
               <p>
                 Students are trained on tools used in real companies, such as:
               </p>
-              <ul className="grid grid-cols-1 gap-2 mb-4 bg-gray-50 p-4 rounded-lg list-disc pl-6">
-  <li className="font-medium">AI tools for content, automation, and productivity</li>
-  <li className="font-medium">Meta Ads Manager and Google Ads</li>
-  <li className="font-medium">Canva, Figma, and design tools</li>
-  <li className="font-medium">Website builders and basic coding tools</li>
-  <li className="font-medium">CRM and lead tracking basics (Google Sheets, Notion, etc.)</li>
-</ul>
+              <ul className="grid grid-cols-1 gap-2 mb-4 bg-gray-50 p-4 rounded-lg list-disc pl-9">
+                <li className="font-medium">
+                  AI tools for content, automation, and productivity
+                </li>
+                <li className="font-medium">Meta Ads Manager and Google Ads</li>
+                <li className="font-medium">Canva, Figma, and design tools</li>
+                <li className="font-medium">
+                  Website builders and basic coding tools
+                </li>
+                <li className="font-medium">
+                  CRM and lead tracking basics (Google Sheets, Notion, etc.)
+                </li>
+              </ul>
 
-<p>This helps them start contributing quickly when they join a company.</p>
+              <p>
+                This helps them start contributing quickly when they join a
+                company.
+              </p>
             </section>
 
             {/* Section 8 */}
@@ -456,62 +518,72 @@ const Pondicherryjobs = () => {
               </h2>
               <img
                 src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                alt="Students with certificates" className="rounded-xl"
+                alt="Students with certificates"
+                className="rounded-xl"
               />
               <p>
                 At the end of the 90 days job ready program, students don’t just
                 get a certificate. They get:
               </p>
-              <ul className="space-y-2 mt-4">
-                <li className="flex items-start">
-                  <Award className="w-5 h-5 text-yellow-500 mr-2 flex-shrink-0" />
-                  <span>
-                    <strong>BM Academy Certificate</strong> for their chosen
-                    track
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <Award className="w-5 h-5 text-yellow-500 mr-2 flex-shrink-0" />
-                  <span>
-                    <strong>Portfolio of real work</strong> (projects, campaigns, designs, automations, dashboards, videos, etc.)
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <Award className="w-5 h-5 text-yellow-500 mr-2 flex-shrink-0" />
-                  <span>
-                    <strong>Updated Resume & LinkedIn</strong> profile
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <Award className="w-5 h-5 text-yellow-500 mr-2 flex-shrink-0" />
-                  <span>
-                    <strong>Interview practice</strong> and clarity on how to present their skills
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <Award className="w-5 h-5 text-yellow-500 mr-2 flex-shrink-0" />
-                  <span>
-                    <strong>Interview practice</strong> and clarity on how to present their skills
-                  </span>
-                </li>
-              </ul>
+              <ul className="list-disc space-y-2 mt-4 pl-9">
+  <li>
+    <div className="flex items-start">
+      <span>
+        <strong>BM Academy Certificate</strong> for their chosen track
+      </span>
+    </div>
+  </li>
+
+  <li>
+    <div className="flex items-start">
+      <span>
+        <strong>Portfolio of real work</strong> (projects, campaigns, designs,
+        automations, dashboards, videos, etc.)
+      </span>
+    </div>
+  </li>
+
+  <li>
+    <div className="flex items-start">
+      <span>
+        <strong>Updated Resume & LinkedIn</strong> profile
+      </span>
+    </div>
+  </li>
+
+  <li>
+    <div className="flex items-start">
+      <span>
+        <strong>Interview practice</strong> and clarity on how to present their skills
+      </span>
+    </div>
+  </li>
+</ul>
+
               <p className="mt-4">
-                This combination—<span className="font-bold">skills + portfolio + confidence + placement
-                support</span>—is what makes them truly job ready.
+                This combination—
+                <span className="font-bold">
+                  skills + portfolio + confidence + placement support
+                </span>
+                —is what makes them truly job ready.
               </p>
             </section>
 
             {/* Section 9 */}
             <section>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                9. Who Should Join BM Academy’s Job Ready Courses in Pondicherry?
+                9. Who Should Join BM Academy’s Job Ready Courses in
+                Pondicherry?
               </h2>
               <img
                 src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                alt="Diverse group of people" className="rounded-xl"
+                alt="Diverse group of people"
+                className="rounded-xl"
               />
-              <p className="underline font-ed">These online and offline job ready courses are ideal for:</p>
-              <ul className="list-disc pl-5 space-y-1 mb-4">
+              <p className="font-bold">
+                These online and offline job ready courses are ideal for:
+              </p>
+              <ul className="list-disc pl-9 space-y-1 mb-4">
                 <li>
                   Final‑year students who want a job immediately after college
                 </li>
@@ -527,9 +599,12 @@ const Pondicherryjobs = () => {
               </ul>
               <div className="bg-gray-100 p-4 rounded-lg italic border-l-4 border-gray-400">
                 "I know I’m capable, but I don’t know where to start." <br />
-                "I want someone to guide me step‑by‑step."<br />
+                "I want someone to guide me step‑by‑step."
+                <br />
                 “I don’t just want theory, I want real skills and a job.”
               </div>
+              <p>...then BM Academy's job ready courses in Pondicherry (online and offline) are built for
+them.</p>
             </section>
 
             {/* Section 10 */}
@@ -539,10 +614,13 @@ const Pondicherryjobs = () => {
               </h2>
               <img
                 src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                alt="Start button concept" className="rounded-xl"
+                alt="Start button concept"
+                className="rounded-xl"
               />
-              <p className="underline font-medium">Suggested flow for the website and counseling team:</p>
-              <ol className="list-decimal pl-5 pt-5 space-y-4 font-medium">
+              <p className="font-bold">
+                Suggested flow for the website and counseling team:
+              </p>
+              <ol className="list-decimal pl-9 pt-5 space-y-4 font-medium">
                 <li>
                   <span className="font-bold text-gray-900">
                     Book a Free Counseling Session:
@@ -556,8 +634,12 @@ const Pondicherryjobs = () => {
                     Choose the 90‑Day Track:
                   </span>
                   <span className="block font-normal text-gray-600 text-sm">
-                    AI + Digital Marketing, FSD, Video Editing, or Data
-                    Analytics.
+                    <ol className="list-disc pl-5">
+                      <li>AI + Digital Marketing Integrated Course</li>
+                      <li>AI + FSD Course</li>
+                      <li>AI + Video Editing Course</li>
+                      <li>AI + Data Analytics Course</li>
+                    </ol>
                   </span>
                 </li>
                 <li>
@@ -666,7 +748,6 @@ const Pondicherryjobs = () => {
             </a>
           </div>
         </aside>
-
       </div>
 
       {/* --- Footer --- */}
@@ -750,7 +831,6 @@ const Pondicherryjobs = () => {
           </div>
         </div>
       </footer>
-
     </div>
   );
 };
