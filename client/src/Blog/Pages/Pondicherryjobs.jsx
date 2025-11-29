@@ -1,5 +1,4 @@
-import React from "react";
-// Removed react-helmet import to fix build error
+import React, { useState } from "react";
 import {
   Home,
   ChevronRight,
@@ -14,32 +13,68 @@ import {
   Monitor,
   Users,
   Award,
+  Facebook,
+  Instagram,
+  Linkedin,
+  X, // Added X for closing the modal
 } from "lucide-react";
 import Logo from "../../assets/image/footer.png";
 import bmlogo from "../../assets/blog/logo.png";
 import { Link } from "react-router-dom";
 import "../../Blog/Pages/css/Style.css";
 
-import { Facebook, Instagram, Linkedin } from "lucide-react";
-
 const Pondicherryjobs = () => {
+  // --- STATE FOR MODAL AND FORM ---
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    course: "AI + Digital Marketing", // Default value
+    location: "Pondicherry", // Default value
+  });
+
   const whatsappUrl =
     "https://wa.me/919944940051?text=Hi%20BM%20Academy%2C%20I%20read%20your%20blog%20on%20job%20ready%20courses%20in%20Pondicherry.%20I%20want%20to%20know%20which%2090%E2%80%91day%20online%2Foffline%20program%20with%20placement%20support%20is%20best%20for%20me.";
 
-  // Helper component for section images
-  const SectionImage = ({ src, alt }) => (
-    <div className="my-6 rounded-lg overflow-hidden shadow-md h-48 md:h-64 w-full relative group">
-      <img
-        src={src}
-        alt={alt}
-        className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-      />
-      <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
-    </div>
-  );
+  // --- HANDLERS ---
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    // Construct the WhatsApp Message
+    const message = `*New Counseling Request*
+------------------------
+*Name:* ${formData.name}
+*Phone:* ${formData.phone}
+*Interested Course:* ${formData.course}
+*Location Preference:* ${formData.location}
+------------------------
+Hi BM Academy, I would like to book a free counseling session based on your blog post.`;
+
+    // Encode URL and redirect
+    const encodedMessage = encodeURIComponent(message);
+    const waLink = `https://wa.me/919944940051?text=${encodedMessage}`;
+
+    window.open(waLink, "_blank");
+    setIsModalOpen(false); // Close modal after submit
+    setFormData({
+      name: "",
+      phone: "",
+      course: "AI + Digital Marketing",
+      location: "Pondicherry",
+    }); // Reset form
+  };
 
   return (
-    <div className="min-h-screen bg-gray-50 font-sans text-gray-800">
+    <div className="min-h-screen bg-gray-50 font-sans text-gray-800 relative">
       <div className="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-12 gap-10">
         {/* --- Main Content Area (Left Column) --- */}
         <main className="lg:col-span-8">
@@ -119,6 +154,7 @@ const Pondicherryjobs = () => {
                 companies are hiring for right now. At BM Academy, students can
                 choose from:
               </p>
+
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-4 bg-gray-50 p-4 rounded-lg list-disc pl-5">
                 <li>
                   <strong>AI + Digital Marketing Integrated Course</strong>
@@ -200,9 +236,7 @@ const Pondicherryjobs = () => {
                 <span className="font-bold">online or offline</span>, the
                 learning style is the same: learn by doing.
               </p>
-              <p className="font-bold">
-                Examples of what students build:
-              </p>
+              <p className="font-bold">Examples of what students build:</p>
               <div className="grid md:grid-cols-2 gap-6 mt-6">
                 <div className="bg-white border-l-3 border-blue-600 rounded-lg shadow hover:shadow-lg transition p-5">
                   <h4 className="font-semibold text-blue-700 text-lg">
@@ -288,9 +322,7 @@ const Pondicherryjobs = () => {
                   <>Some are working or in college and need flexible timings</>
                 </li>
               </ul>
-              <p className="mt-2 font-bold">
-                So BM Academy offers:
-              </p>
+              <p className="mt-2 font-bold">So BM Academy offers:</p>
               <ul className="space-y-3 mt-3 pl-4">
                 <li className="flex items-start">
                   <Monitor className="w-5 h-5 text-blue-500 mr-3 flex-shrink-0 mt-1" />
@@ -324,69 +356,101 @@ const Pondicherryjobs = () => {
             </section>
 
             {/* Section 4 */}
-           <section>
-  <h2 className="text-2xl font-bold text-gray-900 mb-4">
-    4. Clear 90-Day Roadmap
-  </h2>
+            <section>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                4. Clear 90-Day Roadmap
+              </h2>
 
-  <img
-    src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-    alt="Planning roadmap"
-    className="rounded-xl"
-  />
+              <img
+                src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                alt="Planning roadmap"
+                className="rounded-xl"
+              />
 
-  <p className="font-bold mt-3">Every student gets a clear, structured plan.</p>
+              <p className="font-bold mt-3">
+                Every student gets a clear, structured plan.
+              </p>
 
-  <div className="space-y-6 mt-6 ml-4">
-    <div className="flex items-start gap-3">
-      <span className="text-blue-600 text-lg font-bold">➤</span>
-      <div>
-        <h3 className="font-bold text-lg">Days 1–15: Foundations</h3>
-        <p className="text-sm text-gray-600">Understand tools and core concepts.</p>
-        <p className="text-sm text-gray-600">Small tasks to build confidence.</p>
-      </div>
-    </div>
+              <div className="space-y-6 mt-6 ml-4">
+                <div className="flex items-start gap-3">
+                  <span className="text-blue-600 text-lg font-bold">➤</span>
+                  <div>
+                    <h3 className="font-bold text-lg">
+                      Days 1–15: Foundations
+                    </h3>
+                    <p className="text-sm text-gray-600">
+                      Understand tools and core concepts.
+                    </p>
+                    <p className="text-sm text-gray-600">
+                      Small tasks to build confidence.
+                    </p>
+                  </div>
+                </div>
 
-    <div className="flex items-start gap-3">
-      <span className="text-blue-600 text-lg font-bold">➤</span>
-      <div>
-        <h3 className="font-bold text-lg">Days 16–45: Skill Building</h3>
-        <p className="text-sm text-gray-600">Regular practice (daily or alternate days).</p>
-        <p className="text-sm text-gray-600">Mini-projects and assignments.</p>
-        <p className="text-sm text-gray-600">
-          Mentor feedback in live sessions or online support.
-        </p>
-      </div>
-    </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-blue-600 text-lg font-bold">➤</span>
+                  <div>
+                    <h3 className="font-bold text-lg">
+                      Days 16–45: Skill Building
+                    </h3>
+                    <p className="text-sm text-gray-600">
+                      Regular practice (daily or alternate days).
+                    </p>
+                    <p className="text-sm text-gray-600">
+                      Mini-projects and assignments.
+                    </p>
+                    <p className="text-sm text-gray-600">
+                      Mentor feedback in live sessions or online support.
+                    </p>
+                  </div>
+                </div>
 
-    <div className="flex items-start gap-3">
-      <span className="text-blue-600 text-lg font-bold">➤</span>
-      <div>
-        <h3 className="font-bold text-lg">Days 46–75: Major Project</h3>
-        <p className="text-sm text-gray-600">
-          One main project that becomes the center of your portfolio.
-        </p>
-        <p className="text-sm text-gray-600">Weekly review calls or check-ins.</p>
-      </div>
-    </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-blue-600 text-lg font-bold">➤</span>
+                  <div>
+                    <h3 className="font-bold text-lg">
+                      Days 46–75: Major Project
+                    </h3>
+                    <p className="text-sm text-gray-600">
+                      One main project that becomes the center of your
+                      portfolio.
+                    </p>
+                    <p className="text-sm text-gray-600">
+                      Weekly review calls or check-ins.
+                    </p>
+                  </div>
+                </div>
 
-    <div className="flex items-start gap-3">
-      <span className="text-blue-600 text-lg font-bold">➤</span>
-      <div>
-        <h3 className="font-bold text-lg">Days 76–90: Job-Readiness</h3>
-        <p className="text-sm text-gray-600">Resume building focused on skills.</p>
-        <p className="text-sm text-gray-600">Mock interviews and HR questions.</p>
-        <p className="text-sm text-gray-600">LinkedIn profile setup.</p>
-        <p className="text-sm text-gray-600">Guidance on where and how to apply.</p>
-      </div>
-    </div>
-  </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-blue-600 text-lg font-bold">➤</span>
+                  <div>
+                    <h3 className="font-bold text-lg">
+                      Days 76–90: Job-Readiness
+                    </h3>
+                    <p className="text-sm text-gray-600">
+                      Resume building focused on skills.
+                    </p>
+                    <p className="text-sm text-gray-600">
+                      Mock interviews and HR questions.
+                    </p>
+                    <p className="text-sm text-gray-600">
+                      LinkedIn profile setup.
+                    </p>
+                    <p className="text-sm text-gray-600">
+                      Guidance on where and how to apply.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-  <p className="mt-3 text-sm">
-    The <span className="font-bold">syllabus, projects, and placement support</span> remain the same in both modes.
-  </p>
-</section>
-
+              <p className="mt-3 text-sm">
+                The{" "}
+                <span className="font-bold">
+                  syllabus, projects, and placement support
+                </span>{" "}
+                remain the same in both modes.
+              </p>
+            </section>
 
             {/* Section 5 */}
             <section>
@@ -437,8 +501,8 @@ const Pondicherryjobs = () => {
               <div className="bg-green-50 p-4 rounded-lg mt-4 border border-green-100 text-center">
                 <p className="font-bold text-green-800">Success Rate: ~90%</p>
                 <p className="text-sm text-green-700">
-                  For students who complete the course, projects, and interview practice seriously, the
-                  placement success rate is around 90%.
+                  For students who complete the course, projects, and interview
+                  practice seriously, the placement success rate is around 90%.
                 </p>
               </div>
             </section>
@@ -526,39 +590,41 @@ const Pondicherryjobs = () => {
                 get a certificate. They get:
               </p>
               <ul className="list-disc space-y-2 mt-4 pl-9">
-  <li>
-    <div className="flex items-start">
-      <span>
-        <strong>BM Academy Certificate</strong> for their chosen track
-      </span>
-    </div>
-  </li>
+                <li>
+                  <div className="flex items-start">
+                    <span>
+                      <strong>BM Academy Certificate</strong> for their chosen
+                      track
+                    </span>
+                  </div>
+                </li>
 
-  <li>
-    <div className="flex items-start">
-      <span>
-        <strong>Portfolio of real work</strong> (projects, campaigns, designs,
-        automations, dashboards, videos, etc.)
-      </span>
-    </div>
-  </li>
+                <li>
+                  <div className="flex items-start">
+                    <span>
+                      <strong>Portfolio of real work</strong> (projects,
+                      campaigns, designs, automations, dashboards, videos, etc.)
+                    </span>
+                  </div>
+                </li>
 
-  <li>
-    <div className="flex items-start">
-      <span>
-        <strong>Updated Resume & LinkedIn</strong> profile
-      </span>
-    </div>
-  </li>
+                <li>
+                  <div className="flex items-start">
+                    <span>
+                      <strong>Updated Resume & LinkedIn</strong> profile
+                    </span>
+                  </div>
+                </li>
 
-  <li>
-    <div className="flex items-start">
-      <span>
-        <strong>Interview practice</strong> and clarity on how to present their skills
-      </span>
-    </div>
-  </li>
-</ul>
+                <li>
+                  <div className="flex items-start">
+                    <span>
+                      <strong>Interview practice</strong> and clarity on how to
+                      present their skills
+                    </span>
+                  </div>
+                </li>
+              </ul>
 
               <p className="mt-4">
                 This combination—
@@ -603,8 +669,10 @@ const Pondicherryjobs = () => {
                 <br />
                 “I don’t just want theory, I want real skills and a job.”
               </div>
-              <p>...then BM Academy's job ready courses in Pondicherry (online and offline) are built for
-them.</p>
+              <p>
+                ...then BM Academy's job ready courses in Pondicherry (online
+                and offline) are built for them.
+              </p>
             </section>
 
             {/* Section 10 */}
@@ -681,12 +749,13 @@ them.</p>
               you with a clear path to employment.
             </p>
             <div className="flex flex-col md:flex-row justify-center gap-4">
-              <a
-                href="#"
-                className="inline-flex justify-center items-center bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-white hover:text-blue-700 transition-colors"
+              {/* --- UPDATED BUTTON WITH ONCLICK --- */}
+              <button
+                onClick={toggleModal}
+                className="inline-flex justify-center items-center bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-white hover:text-blue-700 transition-colors cursor-pointer"
               >
                 Book Free Counseling
-              </a>
+              </button>
               <a
                 href={whatsappUrl}
                 target="_blank"
@@ -701,7 +770,6 @@ them.</p>
         </main>
 
         {/* --- Sidebar (Right Column) --- */}
-        {/* ADDED: lg:sticky lg:top-24 h-fit (To make it sticky only on lg screens) */}
         <aside className="lg:col-span-4 space-y-8 mt-8 lg:mt-0 lg:sticky lg:top-19 h-fit">
           {/* Author Card */}
           <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
@@ -710,9 +778,7 @@ them.</p>
             </h3>
 
             <div className="flex items-center space-x-4">
-              {/* Increased container size */}
               <div className="w-20 h-20 rounded-full flex items-center justify-center border-2 border-gray-700 font-bold text-xl overflow-hidden">
-                {/* Increased image size */}
                 <img
                   src={bmlogo}
                   alt="logo"
@@ -831,6 +897,119 @@ them.</p>
           </div>
         </div>
       </footer>
+
+      {/* --- ADDED: MODAL COMPONENT --- */}
+      {isModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 bg-opacity-60 backdrop-blur-sm transition-opacity">
+          <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md relative overflow-hidden animate-fade-in-up">
+            {/* Modal Header */}
+            <div className="bg-gradient-to-r from-blue-700 to-indigo-800 p-6 text-white">
+              <div className="flex justify-between items-start">
+                <div>
+                  <h3 className="text-xl font-bold">Free Counseling</h3>
+                  <p className="text-blue-100 text-sm mt-1">
+                    Let's discuss your career path
+                  </p>
+                </div>
+                <button
+                  onClick={toggleModal}
+                  className="text-white/80 hover:text-white hover:bg-white/20 p-1 rounded-full transition"
+                >
+                  <X className="w-6 h-6" />
+                </button>
+              </div>
+            </div>
+
+            {/* Modal Body */}
+            <div className="p-6">
+              <form onSubmit={handleFormSubmit} className="space-y-4">
+                {/* Name */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    Your Name
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    required
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+                    placeholder="Enter your name"
+                  />
+                </div>
+
+                {/* Phone */}
+              <input
+  type="tel"
+  name="phone"
+  required
+  value={formData.phone}
+  onChange={(e) => {
+    // Allow only digits and limit to 10 characters
+    const value = e.target.value.replace(/[^0-9]/g, "").slice(0, 10);
+    handleInputChange({ target: { name: "phone", value } });
+  }}
+  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+  placeholder="Enter your mobile number"
+  maxLength="10"
+/>
+
+
+                {/* Course Selection */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    Interested Course
+                  </label>
+
+                  <input
+                    type="text"
+                    name="course"
+                    value={formData.course}
+                    onChange={handleInputChange}
+                    placeholder="Enter course you are interested in"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg
+           focus:ring-2 focus:ring-blue-500 focus:border-blue-500
+           outline-none transition bg-white"
+                  />
+                </div>
+
+                {/* Location Selection */}
+                <div>
+  <label className="block text-sm font-medium text-gray-700 mb-1">
+    Location
+  </label>
+
+  <input
+    type="text"
+    name="location"
+    value={formData.location}
+    onChange={handleInputChange}
+    placeholder="Enter your city / location"
+    className="w-full px-4 py-2 border border-gray-300 rounded-lg
+           focus:ring-2 focus:ring-blue-500 focus:border-blue-500
+           outline-none transition bg-white"
+  />
+</div>
+
+
+                {/* Submit Button */}
+                <button
+                  type="submit"
+                  className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2 mt-2"
+                >
+                  <MessageCircle className="w-5 h-5" />
+                  Connect on WhatsApp
+                </button>
+
+                <p className="text-xs text-center text-gray-500 mt-2">
+                  We'll redirect you to WhatsApp to send these details.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
