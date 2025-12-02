@@ -23,6 +23,8 @@ import bmlogo from "../../assets/blog/logo.png";
 import { Link } from "react-router-dom";
 import "../../Blog/Pages/css/Style.css";
 
+import coveriamge from '../../assets/blog/coverpage.jpg'
+
 const Pondicherryjobs = () => {
   // --- STATE FOR MODAL AND FORM ---
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -118,11 +120,11 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
             <div className="flex items-center flex-wrap gap-4 text-gray-500 text-sm border-b border-gray-200 pb-6 pt-3">
               <div className="flex items-center">
                 <User className="w-4 h-4 mr-2" />
-                <span>BM Academy Team</span>
+                <span>Kamarudeen BM</span>
               </div>
               <div className="flex items-center">
                 <Calendar className="w-4 h-4 mr-2" />
-                <span>Nov 28, 2025</span>
+                <span>Dec 02, 2025</span>
               </div>
             </div>
           </div>
@@ -130,7 +132,7 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
           {/* --- Featured Image --- */}
           <div className="mb-8 rounded-xl overflow-hidden shadow-lg bg-gray-200 h-64 md:h-96 w-full flex items-center justify-center relative">
             <img
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
+              src={coveriamge}
               alt="Students collaborating in Pondicherry"
               className="w-full h-full object-cover"
             />

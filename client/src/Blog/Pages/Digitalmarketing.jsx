@@ -108,11 +108,11 @@ export const Digitalmarketing = () => {
             <div className="flex items-center flex-wrap gap-4 text-gray-500 text-sm border-b border-gray-200 pb-6 pt-3">
               <div className="flex items-center">
                 <User className="w-4 h-4 mr-2" />
-                <span>BM Academy Team</span>
+                <span>Kamarudeen BM</span>
               </div>
               <div className="flex items-center">
                 <Calendar className="w-4 h-4 mr-2" />
-                <span>Oct 13, 2025</span>
+                <span>Oct 14, 2025</span>
               </div>
             </div>
           </div>

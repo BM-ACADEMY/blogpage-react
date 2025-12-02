@@ -27,7 +27,7 @@ const BlogPage = () => {
       title: "How BM Academy Helps Pondicherry Students Become Job‑Ready in 90 Days (Online & Offline)",
       excerpt: "Stop studying theory and start building your future. BM Academy’s 90-day job-ready program equips you with real-world skills, projects, and interview confidence to land your first job faster.",
       author: "BM Academy",
-      date: "Oct 14, 2025",
+      date: "Dec 02, 2025",
       image: Bannerimage2,
       avatar: bmlogo,
       link: "/blog/job-ready-courses-in-pondicherry"
