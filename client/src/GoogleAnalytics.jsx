@@ -1,16 +1,24 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-export default function GoogleAnalytics() {
+const GoogleAnalytics = () => {
   const location = useLocation();
 
   useEffect(() => {
+    // Meta Pixel Page View
+    if (window.fbq) {
+      window.fbq("track", "PageView");
+    }
+
+    // GA4 Page View
     if (window.gtag) {
-      window.gtag("config", "G-102MXGE3GQ", {
+      window.gtag("event", "page_view", {
         page_path: location.pathname,
       });
     }
-  }, [location]);
+  }, [location.pathname]);
 
   return null;
-}
+};
+
+export default GoogleAnalytics;
