@@ -13,7 +13,8 @@ import {
   Facebook,
   Instagram,
   Linkedin,
-  Share2
+  Share2,
+  LinkIcon
 } from "lucide-react";
 
 // Images
@@ -65,8 +66,8 @@ export const Digitalmarketing = () => {
   return (
     <div className="min-h-screen bg-gray-50 font-sans text-gray-800">
       <Helmet>
-        <title>Top AI Tools You’ll Learn in Our Digital Marketing Course (2025)</title>
-        <meta name="description" content="Learn Canva AI, ChatGPT, Jasper, Google Ads AI & more in our 2025 Digital Marketing AI Course." />
+        <title>Top AI Tools for Digital Marketing Course in 2025 | BM Academy</title>
+        <meta name="description" content="Learn the best AI tools for digital marketing in 2025. Our AI marketing course covers ChatGPT, Canva AI, Google Ads AI & more." />
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
 
@@ -151,7 +152,19 @@ export const Digitalmarketing = () => {
                  From content creation and design to ad optimization and analytics, AI helps marketers work smarter and faster.
                  Our course helps you learn practical AI skills to stay ahead in 2025.
               </p>
+              
             </section>
+            <div className="text-center">
+                <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer" 
+                className="inline-flex justify-center items-center bg-green-500 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-green-600 transition-transform transform hover:-translate-y-1 shadow-lg"
+              >
+                <MessageCircle className="w-6 h-6 mr-2" />
+                Enroll via WhatsApp
+              </a>
+              </div>
 
             {/* Tool 1 */}
             <section className="border-t border-gray-200 pt-8">
@@ -323,6 +336,15 @@ export const Digitalmarketing = () => {
               >
                 <MessageCircle className="w-6 h-6 mr-2" />
                 Enroll via WhatsApp
+              </a>
+              <a
+                href="https://thebmacademy.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex justify-center items-center bg-red-400 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-red-500 transition-transform transform hover:-translate-y-1 shadow-lg"
+              >
+                <LinkIcon className="w-6 h-6 mr-2" />
+               Digital Marketing AI Course
               </a>
             </div>
           </div>

@@ -16,12 +16,14 @@ import {
   Facebook,
   Instagram,
   Linkedin,
-  X, // Added X for closing the modal
+  X,
+  LinkIcon, // Added X for closing the modal
 } from "lucide-react";
 import Logo from "../../assets/image/footer.png";
 import bmlogo from "../../assets/blog/logo.png";
 import { Link } from "react-router-dom";
 import "../../Blog/Pages/css/Style.css";
+import { Helmet } from "react-helmet";
 
 import coveriamge from '../../assets/blog/coverpage.jpg'
 
@@ -77,6 +79,11 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
 
   return (
     <div className="min-h-screen bg-gray-50 font-sans text-gray-800 relative">
+      <Helmet>
+        <title>BM Academy Helps Pondicherry Students Become Job-Ready in 90 Days | AI + Digital Marketing Courses</title>
+        <meta name="description" content="Join BM Academy’s 90-day job-ready courses in Pondicherry. Learn AI, digital marketing, video editing, full-stack development, and more with hands-on projects and placement support." />
+      </Helmet>
+
       <div className="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-12 gap-10">
         {/* --- Main Content Area (Left Column) --- */}
         <main className="lg:col-span-8">
@@ -141,6 +148,18 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
 
           {/* --- Blog Content --- */}
           <article className="prose prose-lg max-w-none text-gray-700 space-y-12">
+
+             <div className="text-center">
+               <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex justify-center items-center bg-green-500 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-green-600 transition-transform transform hover:-translate-y-1 shadow-lg"
+              >
+                <MessageCircle className="w-6 h-6 mr-2" />
+                AI + Digital Marketing Course
+              </a>
+            </div>
             {/* Section 1 */}
             <section>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
@@ -636,6 +655,17 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
                 —is what makes them truly job ready.
               </p>
             </section>
+            <div className="text-center">
+               <a
+                href='https://thebmacademy.com/'
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex justify-center items-center bg-red-400 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-red-600 transition-transform transform hover:-translate-y-1 shadow-lg"
+              >
+                <LinkIcon className="w-6 h-6 mr-2" />
+                AI + Digital Marketing Course
+              </a>
+            </div>
 
             {/* Section 9 */}
             <section>
