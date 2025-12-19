@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet";
 import Bannerimage1 from "../assets/blog/banneriamges.png";
 import Bannerimage2 from "../assets/blog/Gemini_Generated_Image_bfbfngbfbfngbfbf.png";
 import bmlogo from "../assets/blog/logo.png";
+import DA from "../assets/blog/da.jpg";
 
 
 const BlogPage = () => {
@@ -31,6 +32,17 @@ const BlogPage = () => {
       image: Bannerimage2,
       avatar: bmlogo,
       link: "/blog/job-ready-courses-in-pondicherry"
+    },
+    {
+      id: 3,
+      category: "AI Skills ",
+      title: "Why AI Skills Are a Must for Today’s Full Stack Developers",
+      excerpt: "Imagine spending months learning frontend and backend development — and still being told you’re “not industry‑ready” because you lack AI skills.",
+      author: "BM Academy",
+      date: "Dec 19, 2025",
+      image: DA,
+      avatar: bmlogo,
+      link: "/blog/why-ai-skills-fsd"
     },
   ];
 
