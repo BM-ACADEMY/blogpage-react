@@ -315,6 +315,17 @@ const FullStackAI = () => {
                   career roadmap.
                 </div>
               </div>
+
+              <div className="text-center mb-5">
+                <a
+                  href="https://thebmacademy.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-red-600 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-red-700 transition-all shadow-lg"
+                >
+                  Stay Relevant. Learn Full-Stack with AI.
+                </a>
+              </div>
             </section>
 
             {/* Section 3 */}
@@ -575,6 +586,16 @@ const FullStackAI = () => {
       </div>
     </div>
   </div>
+  <div className="text-center mt-10 mb-5">
+                <a
+                  href="https://thebmacademy.com/contact.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-red-600 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-red-700 transition-all shadow-lg"
+                >
+                  Stay Relevant. Learn Full-Stack with AI.
+                </a>
+              </div>
 </section>
 
              <div className="mt-1 border-t pt-10">
