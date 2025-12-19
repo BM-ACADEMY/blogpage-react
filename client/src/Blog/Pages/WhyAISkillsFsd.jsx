@@ -593,7 +593,7 @@ const FullStackAI = () => {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-red-600 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-red-700 transition-all shadow-lg"
                 >
-                  Stay Relevant. Learn Full-Stack with AI.
+                 Talk to Our AI & Full-Stack Experts
                 </a>
               </div>
 </section>
