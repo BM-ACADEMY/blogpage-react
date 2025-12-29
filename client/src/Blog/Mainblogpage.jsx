@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 
 import Bannerimage1 from "../assets/blog/banneriamges.png";
 import Bannerimage2 from "../assets/blog/Gemini_Generated_Image_bfbfngbfbfngbfbf.png";
+import Bannerimage3 from "../assets/image/new-year-new-skill.jpg";
 import bmlogo from "../assets/blog/logo.png";
 import DA from "../assets/blog/da.jpg";
 
@@ -56,7 +57,7 @@ const BlogPage = () => {
         "Start 2026 by upgrading your career with future-ready skills. Learn AI + Digital Marketing or AI + Full Stack Development through practical, industry-focused training at BM Academy.",
       author: "BM Academy",
       date: "Jan 01, 2026",
-      image: DA,
+      image: Bannerimage3,
       avatar: bmlogo,
       link: "/blog/new-year-new-skill",
     },
