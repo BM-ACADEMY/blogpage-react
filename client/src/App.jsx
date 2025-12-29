@@ -6,6 +6,7 @@ import { Digitalmarketing } from "./Blog/Pages/Digitalmarketing";
 import BlogPage from "./Blog/Mainblogpage";
 import Pondicherryjobs from "./Blog/Pages/Pondicherryjobs";
 import AIForFullStack from "./Blog/Pages/WhyAISkillsFsd";
+import Futureskills from "./Blog/Pages/Futureskills";
 
 export const App = () => {
   return (
@@ -25,6 +26,10 @@ export const App = () => {
         <Route
           path="/blog/why-ai-skills-fsd"
           element={<AIForFullStack />}
+        />
+        <Route
+          path="/blog/new-year-new-skill"
+          element={<Futureskills />}
         />
       </Routes>
     </>
