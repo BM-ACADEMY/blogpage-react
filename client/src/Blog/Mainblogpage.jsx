@@ -56,7 +56,7 @@ const BlogPage = () => {
       excerpt:
         "Start 2026 by upgrading your career with future-ready skills. Learn AI + Digital Marketing or AI + Full Stack Development through practical, industry-focused training at BM Academy.",
       author: "BM Academy",
-      date: "Jan 01, 2026",
+      date: "Dec 19, 2025",
       image: Bannerimage3,
       avatar: bmlogo,
       link: "/blog/new-year-new-skill",
