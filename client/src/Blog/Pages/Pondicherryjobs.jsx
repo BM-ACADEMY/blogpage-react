@@ -27,7 +27,7 @@ import { Link } from "react-router-dom";
 import "../../Blog/Pages/css/Style.css";
 import { Helmet } from "react-helmet";
 
-import coveriamge from '../../assets/blog/coverpage.jpg'
+import coveriamge from '../../assets/blog/job-ready-courses-pondicherry.jpg'
 
 const Pondicherryjobs = () => {
   // --- STATE FOR MODAL AND FORM ---
@@ -79,12 +79,69 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
     }); // Reset form
   };
 
+  const JobReadyCoursesSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://blog.thebmacademy.com/blog/job-ready-courses-in-pondicherry"
+  },
+  "headline": "Job Ready Courses in Pondicherry",
+  "description": "Discover job ready courses in Pondicherry by BM Academy. Gain industry-focused skills with practical training, real-time projects, and career support to become job-ready fast.",
+  "image": "https://blog.thebmacademy.com/wp-content/uploads/job-ready-courses-pondicherry.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "BM Academy"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BM Academy",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://thebmacademy.com/wp-content/uploads/bm-academy-logo.png"
+    }
+  },
+  "datePublished": "2025-01-01",
+  "dateModified": "2025-01-01"
+};
+
   return (
     <div className="min-h-screen bg-gray-50 font-sans text-gray-800 relative">
       <Helmet>
-        <title>BM Academy Helps Pondicherry Students Become Job-Ready in 90 Days | AI + Digital Marketing Courses</title>
-        <meta name="description" content="Join BM Academy’s 90-day job-ready courses in Pondicherry. Learn AI, digital marketing, video editing, full-stack development, and more with hands-on projects and placement support." />
+        <title>Top AI Tools for Digital Marketing Course in 2025 | BM Academy</title>
+        <meta name="description" content=" Discover the best job-ready courses in Pondicherry. Learn AI, Digital Marketing, Full Stack Development, and Video Editing with practical training and placement support." />
+      <link rel="canonical" href="https://blog.thebmacademy.com/blog/job-ready-courses-in-pondicherry" />
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content="Job Ready Courses in Pondicherry | BM Academy" />
+      <meta property="og:description" content="Explore job ready courses in Pondicherry by BM Academy. Gain industry-focused skills with practical training, real-time projects, and career support to become job-ready fast." />
+      <meta property="og:url" content="https://blog.thebmacademy.com/blog/job-ready-courses-in-pondicherry" />
+      <meta property="og:site_name" content="BM Academy Blog" />
+      <meta property="og:image" content="https://blog.thebmacademy.com/asserts/blog/job-ready-courses-pondicherry.jpg" />
+      <meta property="og:image:alt" content="Job Ready Courses in Pondicherry by BM Academy" />
+      <meta property="og:locale" content="en_IN" />
+       <script type="application/ld+json">
+          {JSON.stringify(JobReadyCoursesSchema)}
+        </script>
+
+
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-102MXGE3GQ"
+        ></script>
+
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-102MXGE3GQ', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </script>
+
       </Helmet>
+
 
       <div className="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-12 gap-10">
         {/* --- Main Content Area (Left Column) --- */}
@@ -121,8 +178,8 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
               Career Development
             </div>
             <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight mb-6">
-              BM Academy Helps Pondicherry Students Become Job‑Ready in 90 Days
-              (Online & Offline)
+              BM Academy Helps Pondicherry Students Become Job‑Ready in 90 Days (Online & Offline)
+
             </h1>
 
             {/* Meta Data */}
@@ -169,7 +226,7 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
               </h2>
               <img
                 src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                alt="Market relevant courses"
+                alt="Students receiving hands-on job-ready training at BM Academy in Pondicherry"
                 className="rounded-xl"
               />
               <p>
@@ -251,7 +308,7 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
               </h2>
               <img
                 src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                alt="Project based learning"
+                alt="Project-based practical learning with real-time coding training at BM Academy in Pondicherry"
                 className="rounded-xl"
               />
               <p>
@@ -263,7 +320,7 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
               <div className="grid md:grid-cols-2 gap-6 mt-6">
                 <div className="bg-white border-l-3 border-blue-600 rounded-lg shadow hover:shadow-lg transition p-5">
                   <h4 className="font-semibold text-blue-700 text-lg">
-                    AI + Digital Marketing
+                    <a href="https://thebmacademy.com/Digital.html">AI + Digital Marketing</a>
                   </h4>
                   <p className="text-sm text-gray-600 mt-1">
                     A lead generation and follow-up funnel using AI tools,
@@ -273,7 +330,7 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
 
                 <div className="bg-white border-l-3 border-green-600 rounded-lg shadow hover:shadow-lg transition p-5">
                   <h4 className="font-semibold text-green-700 text-lg">
-                    AI + FSD
+                   <a href="https://thebmacademy.com/Java.html"> AI + FSD</a>
                   </h4>
                   <p className="text-sm text-gray-600 mt-1">
                     A portfolio website or mini web app with AI-powered
@@ -283,7 +340,7 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
 
                 <div className="bg-white border-l-3 border-purple-600 rounded-lg shadow hover:shadow-lg transition p-5">
                   <h4 className="font-semibold text-purple-700 text-lg">
-                    AI + Video Editing
+                    <a href="https://thebmacademy.com/video.html">AI + Video Editing</a>
                   </h4>
                   <p className="text-sm text-gray-600 mt-1">
                     Short-form and long-form videos enhanced with AI for
@@ -293,7 +350,7 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
 
                 <div className="bg-white border-l-3 border-orange-600 rounded-lg shadow hover:shadow-lg transition p-5">
                   <h4 className="font-semibold text-orange-700 text-lg">
-                    AI + Data Analytics
+                    <a href="https://thebmacademy.com/Python.html">AI + Data Analytics</a>
                   </h4>
                   <p className="text-sm text-gray-600 mt-1">
                     Dashboards and reports using real or sample business data
@@ -328,7 +385,7 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
               </h2>
               <img
                 src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                alt="Flexible classroom options"
+                alt="Classroom training session for flexible online and offline batches at BM Academy in Pondicherry"
                 className="rounded-xl"
               />
               <p className="pt-5 font-bold">
@@ -386,12 +443,12 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
 
               <img
                 src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                alt="Planning roadmap"
+                alt="Clear 90-day learning roadmap for job-ready courses at BM Academy in Pondicherry"
                 className="rounded-xl"
               />
 
               <p className="font-bold mt-3">
-                Every student gets a clear, structured plan.
+                Every student gets a clear, <a href="https://thebmacademy.com/about.html" target="_blank"> structured plan.</a>
               </p>
 
               <div className="space-y-6 mt-6 ml-4">
@@ -482,7 +539,7 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
               </h2>
               <img
                 src="https://images.pexels.com/photos/9052131/pexels-photo-9052131.jpeg"
-                alt="Job interview handshake"
+                alt="Placement-focused training and career support for job-ready courses at BM Academy in Pondicherry"
                 className="rounded-xl"
               />
               <p>
@@ -537,7 +594,7 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
               </h2>
               <img
                 src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                alt="Mentoring session"
+                alt="Personalized mentoring and one-on-one guidance in small batch training at BM Academy Pondicherry"
                 className="rounded-xl"
               />
               <p>
@@ -572,7 +629,7 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
               </h2>
               <img
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                alt="Data and analytics tools"
+                alt="Hands-on training using real-world analytics and performance tools at BM Academy"
                 className="rounded-xl"
               />
               <p>
@@ -605,7 +662,7 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
               </h2>
               <img
                 src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                alt="Students with certificates"
+                alt="Students collaborating on real projects after completing a 90-day job-ready course"
                 className="rounded-xl"
               />
               <p>
@@ -652,7 +709,7 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
               <p className="mt-4">
                 This combination—
                 <span className="font-bold">
-                  skills + portfolio + confidence + placement support
+                  skills + portfolio + confidence + <a href="https://thebmacademy.com/contact.html" target="_blank"> placement support</a>
                 </span>
                 —is what makes them truly job ready.
               </p>
@@ -720,7 +777,7 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
                 className="rounded-xl"
               />
               <p className="font-bold">
-                Suggested flow for the website and counseling team:
+                Suggested flow for the website and <a href="https://thebmacademy.com/contact.html" target="_blank">counseling team</a>:
               </p>
               <ol className="list-decimal pl-9 pt-5 space-y-4 font-medium">
                 <li>
