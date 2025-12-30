@@ -14,7 +14,9 @@ import {
   Instagram,
   Linkedin,
   Share2,
-  LinkIcon
+  LinkIcon,
+  Mail,
+  Youtube
 } from "lucide-react";
 
 // Images
@@ -219,7 +221,7 @@ export const Digitalmarketing = () => {
             <div className="flex items-center flex-wrap gap-4 text-gray-500 text-sm border-b border-gray-200 pb-6 pt-3">
               <div className="flex items-center">
                 <User className="w-4 h-4 mr-2" />
-                <span>Kamarudeen BM</span>
+                <span><a href="https://www.linkedin.com/in/kamarudeen-b-m-66508657/" target="_blank">Kamarudeen BM</a></span>
               </div>
               <div className="flex items-center">
                 <Calendar className="w-4 h-4 mr-2" />
@@ -513,7 +515,7 @@ export const Digitalmarketing = () => {
                    </p>
                    <div className="footer-social flex items-center gap-4 text-white">
                      <a
-                       href="https://www.facebook.com/people/BM-Academy/61566753898165/"
+                       href="https://www.facebook.com/profile.php?id=61585268211774"
                        target="_blank"
                        rel="noopener noreferrer"
                        className="hover:text-yellow-300 transition"
@@ -522,7 +524,7 @@ export const Digitalmarketing = () => {
                      </a>
      
                      <a
-                       href="https://www.instagram.com/bmacademypondy?igsh=MTYxcHNscDZvdDR0cA=="
+                       href="https://www.instagram.com/bmtechxpondy?igsh=bHRpMG4wZXBhM2V1"
                        target="_blank"
                        rel="noopener noreferrer"
                        className="hover:text-yellow-300 transition"
@@ -531,13 +533,27 @@ export const Digitalmarketing = () => {
                      </a>
      
                      <a
-                       href="https://www.linkedin.com/company/bm-academypondy/about/?viewAsMember=true"
+                       href="https://www.linkedin.com/company/106463432/admin/dashboard/"
                        target="_blank"
                        rel="noopener noreferrer"
                        className="hover:text-yellow-300 transition"
                      >
                        <Linkedin className="w-6 h-6" />
                      </a>
+                     <a
+                      href="mailto:admin@abmgroups.org "
+                      className="hover:text-yellow-300 transition"
+                    >
+                      <Mail className="w-6 h-6" />
+                    </a>
+
+                    <a
+                      href="https://www.youtube.com/@BMACADEMYPONDY" target="_blank"
+                      className="hover:text-yellow-300 transition"
+                    >
+                      <Youtube className="w-6 h-6" />
+                    </a>
+
                    </div>
                  </div>
      
