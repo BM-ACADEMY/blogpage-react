@@ -35,40 +35,150 @@ export const Digitalmarketing = () => {
     "https://wa.me/919944940051?text=Hi%2C%20I%20want%20to%20join%20the%202025%20AI%20Digital%20Marketing%20Course.%20Please%20share%20the%20full%20details.";
 
   // Schema Data
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": "https://bmacademy.in/blog/top-ai-tools-digital-marketing-course-2025",
-    },
-    headline: "Top AI Tools You’ll Learn in Our Digital Marketing AI Course (2025)",
-    description: "Learn Canva AI, ChatGPT, Jasper, Google Ads AI & Meta Advantage+ in our 2025 Digital Marketing AI Course.",
-    image: "https://thebmacademy.com/blog/image/ai-digital-marketing-tools-2025-banner.png",
-    author: {
-      "@type": "Organization",
-      name: "BM Academy",
-      url: "https://bmacademy.in",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "BM Academy",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.thebmacademy.com/assets/images/BM%20Logo%20Final-01.png",
-      },
-    },
-    datePublished: "2025-10-13",
-    dateModified: "2025-10-13",
-    articleSection: "Digital Marketing AI Course",
-  };
+  // const schemaData = {
+  //   "@context": "https://schema.org",
+  //   "@type": "BlogPosting",
+  //   mainEntityOfPage: {
+  //     "@type": "WebPage",
+  //     "@id": "https://bmacademy.in/blog/top-ai-tools-digital-marketing-course-2025",
+  //   },
+  //   headline: "Top AI Tools You’ll Learn in Our Digital Marketing AI Course (2025)",
+  //   description: "Learn Canva AI, ChatGPT, Jasper, Google Ads AI & Meta Advantage+ in our 2025 Digital Marketing AI Course.",
+  //   image: "https://thebmacademy.com/blog/image/ai-digital-marketing-tools-2025-banner.png",
+  //   author: {
+  //     "@type": "Organization",
+  //     name: "BM Academy",
+  //     url: "https://bmacademy.in",
+  //   },
+  //   publisher: {
+  //     "@type": "Organization",
+  //     name: "BM Academy",
+  //     logo: {
+  //       "@type": "ImageObject",
+  //       url: "https://www.thebmacademy.com/assets/images/BM%20Logo%20Final-01.png",
+  //     },
+  //   },
+  //   datePublished: "2025-10-13",
+  //   dateModified: "2025-10-13",
+  //   articleSection: "Digital Marketing AI Course",
+  // };
 
   return (
     <div className="min-h-screen bg-gray-50 font-sans text-gray-800">
       <Helmet>
         <title>Top AI Tools for Digital Marketing Course in 2025 | BM Academy</title>
         <meta name="description" content="Learn the best AI tools for digital marketing in 2025. Our AI marketing course covers ChatGPT, Canva AI, Google Ads AI & more." />
-        <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
+        {/* <script type="application/ld+json">{JSON.stringify(schemaData)}</script> */}
+         <link
+      rel="canonical"
+      href="https://blog.thebmacademy.com/blog/top-ai-tools-digital-marketing-course-2025"
+    />
+
+    <meta property="og:type" content="article" />
+  <meta
+    property="og:title"
+    content="Top AI Tools for Digital Marketing Course in 2025"
+  />
+  <meta
+    property="og:description"
+    content="Explore the top AI tools for digital marketing courses in 2025. Learn how marketers use AI for SEO, content creation, ads, automation, and analytics."
+  />
+  <meta
+    property="og:url"
+    content="https://blog.thebmacademy.com/blog/top-ai-tools-digital-marketing-course-2025"
+  />
+  <meta property="og:site_name" content="BM Academy Blog" />
+  <meta
+    property="og:image"
+    content="https://blog.thebmacademy.com/wp-content/uploads/ai-tools-digital-marketing-2025.jpg"
+  />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+
+  {/* Schema.org JSON-LD */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id":
+          "https://blog.thebmacademy.com/blog/top-ai-tools-digital-marketing-course-2025",
+      },
+      headline: "Top AI Tools for Digital Marketing Course 2025",
+      description:
+        "Explore the top AI tools transforming digital marketing in 2025. Learn how ChatGPT, Canva AI, Google Ads AI, SEO tools, and CRM AI can enhance your marketing strategy and workflow.",
+      image:
+        "https://blog.thebmacademy.com/assets/images/top-ai-tools-digital-marketing-2025.jpg",
+      author: {
+        "@type": "Person",
+        name: "BMAcademy Team",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "BMAcademy",
+        logo: {
+          "@type": "ImageObject",
+          url:
+            "https://blog.thebmacademy.com/assets/images/bmacademy-logo.png",
+        },
+      },
+      datePublished: "2025-01-01",
+      dateModified: "2025-12-25",
+      keywords:
+        "AI tools, digital marketing, ChatGPT, Canva AI, Google Ads AI, SEO AI, CRM AI, digital marketing course 2025",
+      articleSection: [
+        "Introduction",
+        "ChatGPT and AI Writing Tools",
+        "Canva AI for Creative Design",
+        "Google Ads AI and Campaign Automation",
+        "SEO & Analytics Tools with AI",
+        "CRM and Engagement AI Tools",
+        "Conclusion",
+      ],
+      breadcrumb: {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://blog.thebmacademy.com/",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Blog",
+            item: "https://blog.thebmacademy.com/blog",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "Top AI Tools for Digital Marketing Course 2025",
+            item:
+              "https://blog.thebmacademy.com/blog/top-ai-tools-digital-marketing-course-2025",
+          },
+        ],
+      },
+    })}
+  </script>
+
+  {/* Google Analytics (GA4) */}
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-102MXGE3GQ"
+  ></script>
+  <script>
+    {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-102MXGE3GQ');
+    `}
+  </script>
+        
+
       </Helmet>
 
       <div className="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-12 gap-10">
@@ -122,7 +232,7 @@ export const Digitalmarketing = () => {
           <div className="mb-8 rounded-xl overflow-hidden shadow-lg bg-gray-200 h-64 md:h-96 w-full relative">
             <img
               src={Image1}
-              alt="Student learning AI marketing"
+              alt="Top AI tools for digital marketing course in 2025 including ChatGPT, Canva AI and Google Ads AI"
               className="w-full h-full object-cover"
             />
           </div>
@@ -137,20 +247,20 @@ export const Digitalmarketing = () => {
               </h2>
               <p>
                 Master the latest AI tools to create smarter campaigns, content, and strategies. 
-                Digital Marketing is evolving fast — AI tools are now at the core of successful campaigns.
+                <strong><a href="https://thebmacademy.com/Digital.html " target="_blank">Digital Marketing</a></strong> is evolving fast — AI tools are now at the core of successful campaigns.
               </p>
               
               <div className="my-6 rounded-lg overflow-hidden shadow-md w-full">
                 <img
                   src={Image2}
-                  alt="Traditional vs AI marketing"
+                  alt="Overview of AI tools used in digital marketing strategies in 2025"
                   className="w-full h-auto object-cover"
                 />
               </div>
 
               <p>
                  From content creation and design to ad optimization and analytics, AI helps marketers work smarter and faster.
-                 Our course helps you learn practical AI skills to stay ahead in 2025.
+                 Our course helps you learn practical <strong><a href="https://thebmacademy.com/Digital.html" target="_blank">AI skills to stay ahead in 2025.</a></strong>
               </p>
               
             </section>
@@ -173,7 +283,7 @@ export const Digitalmarketing = () => {
               </h2>
               <img
                 src={Image3}
-                alt="Canva AI"
+                alt="Canva AI tool for creating social media graphics and digital marketing designs"
                 className="w-full rounded-xl shadow-md my-6"
               />
               <div className="bg-gray-50 p-6 rounded-lg">
@@ -192,7 +302,7 @@ export const Digitalmarketing = () => {
               </h2>
               <img
                 src={Image4}
-                alt="ChatGPT Marketing"
+                alt="ChatGPT AI tool for content writing, blog creation and digital marketing automation"
                 className="w-full rounded-xl shadow-md my-6"
               />
               <div className="bg-gray-50 p-6 rounded-lg">
@@ -230,7 +340,7 @@ export const Digitalmarketing = () => {
               </h2>
               <img
                 src={Image6}
-                alt="Google Ads AI"
+                alt="Google Ads AI automation for PPC campaign optimization and performance marketing"
                 className="w-full rounded-xl shadow-md my-6"
               />
               <div className="bg-gray-50 p-6 rounded-lg">
@@ -287,7 +397,7 @@ export const Digitalmarketing = () => {
               </h2>
               <img
                 src={Image9}
-                alt="Students"
+                alt="Future of AI in digital marketing and automation trends for 2025"
                 className="w-full rounded-xl shadow-md my-6"
               />
               <div className="space-y-4">
@@ -312,7 +422,7 @@ export const Digitalmarketing = () => {
                 Future-Proof Your Marketing Skills
               </h2>
               <p>
-                Digital Marketing + AI is not just a trend — it’s the future of every marketing career. 
+                <strong><a href="https://thebmacademy.com/Digital.html " target="_blank">Digital Marketing</a></strong> + AI is not just a trend — it’s the future of every marketing career. 
                 Learn these tools now to create smarter campaigns, save time, and excel in your career.
               </p>
             </section>
