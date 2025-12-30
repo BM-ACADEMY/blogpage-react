@@ -515,7 +515,7 @@ export const Digitalmarketing = () => {
                    </p>
                    <div className="footer-social flex items-center gap-4 text-white">
                      <a
-                       href="https://www.facebook.com/profile.php?id=61585268211774"
+                       href="https://www.facebook.com/people/BM-Academy/61566753898165/"
                        target="_blank"
                        rel="noopener noreferrer"
                        className="hover:text-yellow-300 transition"
@@ -524,7 +524,7 @@ export const Digitalmarketing = () => {
                      </a>
      
                      <a
-                       href="https://www.instagram.com/bmtechxpondy?igsh=bHRpMG4wZXBhM2V1"
+                       href="https://www.instagram.com/bmacademypondy/?utm_source=ig_embed&ig_rid=1b7aaffb-d4b9-490c-affe-5c583afc19cb"
                        target="_blank"
                        rel="noopener noreferrer"
                        className="hover:text-yellow-300 transition"

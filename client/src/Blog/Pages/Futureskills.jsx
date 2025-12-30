@@ -24,7 +24,9 @@ import {
   Pin,
   ArrowRight,
   HelpCircle,
-  LinkIcon
+  LinkIcon,
+  Mail,
+  Youtube
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -571,9 +573,9 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
                 With expert guidance and career support, we help you unlock your
                 potential and achieve professional growth.
               </p>
-             <div className="footer-social flex items-center gap-4 text-white">
+            <div className="footer-social flex items-center gap-4 text-white">
                      <a
-                       href="https://www.facebook.com/profile.php?id=61585268211774"
+                       href="https://www.facebook.com/people/BM-Academy/61566753898165/"
                        target="_blank"
                        rel="noopener noreferrer"
                        className="hover:text-yellow-300 transition"
@@ -582,7 +584,7 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
                      </a>
      
                      <a
-                       href="https://www.instagram.com/bmtechxpondy?igsh=bHRpMG4wZXBhM2V1"
+                       href="https://www.instagram.com/bmacademypondy/?utm_source=ig_embed&ig_rid=1b7aaffb-d4b9-490c-affe-5c583afc19cb"
                        target="_blank"
                        rel="noopener noreferrer"
                        className="hover:text-yellow-300 transition"
