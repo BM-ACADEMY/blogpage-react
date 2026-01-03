@@ -156,16 +156,16 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
 
 
-         <script async src="https://www.googletagmanager.com/gtag/js?id=G-RVXHVZMRNX"></script>
+         <script async src="https://www.googletagmanager.com/gtag/js?id=G-102MXGE3GQ"></script>
 
   <script>
     {`
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-RVXHVZMRNX', {
-        page_path: window.location.pathname,
-      });
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-102MXGE3GQ');
+
     `}
   </script>
 
@@ -214,7 +214,7 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
               </div>
               <div className="flex items-center">
                 <Calendar className="w-4 h-4 mr-2" />
-                <span>Dec 22, 2025</span>
+                <span>Dec 29, 2025</span>
               </div>
             </div>
           </div>
