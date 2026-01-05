@@ -7,6 +7,7 @@ import BlogPage from "./Blog/Mainblogpage";
 import Pondicherryjobs from "./Blog/Pages/Pondicherryjobs";
 import AIForFullStack from "./Blog/Pages/WhyAISkillsFsd";
 import Futureskills from "./Blog/Pages/Futureskills";
+import Awardwinning from "./Blog/Pages/Awardwinning";
 
 export const App = () => {
   return (
@@ -30,6 +31,10 @@ export const App = () => {
         <Route
           path="/blog/new-year-new-skill"
           element={<Futureskills />}
+        />
+        <Route
+          path="/blog/award-winning-leadership-bm-academy"
+          element={<Awardwinning />}
         />
       </Routes>
     </>

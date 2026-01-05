@@ -61,6 +61,20 @@ const BlogPage = () => {
       avatar: bmlogo,
       link: "/blog/new-year-new-skill",
     },
+
+    {
+      id: 5,
+      category: "Award Winning Leadership",
+      title: "Award Winning Leadership | BM Academy’s Path to Shaping Tomorrow’s Skilled Professionals",
+      excerpt:"BM Academy’s award-winning leadership reflects its commitment to skill-based education, career-focused training, and empowering future-ready professionals.",
+      author: "BM Academy",
+      date: "Jan 06, 2026",
+      image: Bannerimage3,
+      avatar: bmlogo,
+      link: "/blog/award-winning-leadership-bm-academy",
+    },
+
+
   ];
 
   const pageHeadline = "Our Latest Blogs";
