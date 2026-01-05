@@ -8,6 +8,7 @@ import Bannerimage2 from "../assets/blog/Gemini_Generated_Image_bfbfngbfbfngbfbf
 import Bannerimage3 from "../assets/image/new-year-new-skill.jpg";
 import bmlogo from "../assets/blog/logo.png";
 import DA from "../assets/blog/da.jpg";
+import Award from "../assets/image/path-to-hero-image.png";
 
 const BlogPage = () => {
   const blogs = [
@@ -69,7 +70,7 @@ const BlogPage = () => {
       excerpt:"BM Academy’s award-winning leadership reflects its commitment to skill-based education, career-focused training, and empowering future-ready professionals.",
       author: "BM Academy",
       date: "Jan 06, 2026",
-      image: Bannerimage3,
+      image: Award,
       avatar: bmlogo,
       link: "/blog/award-winning-leadership-bm-academy",
     },

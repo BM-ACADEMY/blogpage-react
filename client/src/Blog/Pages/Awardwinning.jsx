@@ -264,7 +264,7 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
           {/* --- Article Header --- */}
           <div className="mb-8">
             <div className="inline-block bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full font-semibold uppercase tracking-wide mb-4">
-              Leadership & Excellence
+              Award Winning Leadership
             </div>
             <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight mb-6">
               Award-Winning Leadership: BM Academy’s Path to Shaping Tomorrow’s Skilled Professionals
@@ -310,13 +310,13 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
             {/* Section 2 */}
             <section>
               <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                <Target className="text-red-500" /> Award-Winning Leadership That Inspires Change
+                Award-Winning Leadership That Inspires Change
               </h2>
               <div className="my-6 rounded-xl overflow-hidden shadow-md">
                  <img
-                    src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=2070&auto=format&fit=crop"
+                    src={Cover}
                     alt="BM Academy founder recognised for excellence in education leadership and social impact"
-                    className="w-full h-64 object-cover"
+                    className="w-full object-cover"
                  />
               </div>
               <p>
@@ -543,9 +543,10 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
               🚀 Ready to upgrade your skills and build a future-ready career?
             </h2>
-            <p className="mb-8 text-blue-100 max-w-lg mx-auto leading-relaxed">
-              Explore industry-focused courses and start your learning journey with BM Academy today. Enroll. Upskill. Succeed.
-            </p>
+            <h2 className="text-lg mb-8 text-blue-100 leading-relaxed">
+               Explore industry-focused courses and start your learning journey with BM Academy today. Enroll. Upskill. Succeed.
+            </h2>
+             
             <div className="flex flex-col md:flex-row justify-center gap-4">
               <a href="https://www.thebmacademy.com/contact.html" target="_blank"
                 className="inline-flex justify-center items-center bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-white hover:text-blue-700 transition-colors cursor-pointer"
