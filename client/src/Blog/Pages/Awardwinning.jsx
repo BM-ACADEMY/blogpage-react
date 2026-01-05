@@ -17,8 +17,8 @@ import {
   Users,
   Lightbulb,
   ArrowRight,
-  ChevronDown, 
-  ChevronUp
+  ChevronDown,
+  ChevronUp,
 } from "lucide-react";
 import Logo from "../../assets/image/footer.png";
 import bmlogo from "../../assets/blog/logo.png";
@@ -28,7 +28,7 @@ import "../../Blog/Pages/css/Style.css";
 import { Helmet } from "react-helmet";
 
 // NOTE: You should replace this import with your actual Award image
-// import awardImage from '../../assets/blog/award-ceremony.jpg'; 
+// import awardImage from '../../assets/blog/award-ceremony.jpg';
 
 const AwardWinningLeadership = () => {
   // --- STATE FOR MODAL AND FORM ---
@@ -37,10 +37,11 @@ const AwardWinningLeadership = () => {
     name: "",
     phone: "",
     course: "General Inquiry", // Default value
-    location: "", 
+    location: "",
   });
 
-  const whatsappUrl = "https://wa.me/919944940051?text=Hi%20BM%20Academy%2C%20I%20read%20your%20blog%20on%20Award%20Winning%20Leadership.%20I%20want%20to%20know%20more%20about%20your%20courses.";
+  const whatsappUrl =
+    "https://wa.me/919944940051?text=Hi%20BM%20Academy%2C%20I%20read%20your%20blog%20on%20Award%20Winning%20Leadership.%20I%20want%20to%20know%20more%20about%20your%20courses.";
 
   // --- HANDLERS ---
   const toggleModal = () => {
@@ -84,75 +85,78 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
   const BlogSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": {
+    mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": "https://thebmacademy.com/blog/award-winning-leadership-bm-academy"
+      "@id":
+        "https://thebmacademy.com/blog/award-winning-leadership-bm-academy",
     },
-    "headline": "Award-Winning Leadership: BM Academy’s Path to Shaping Tomorrow’s Skilled Professionals",
-    "description": "BM Academy’s award-winning leadership reflects its commitment to skill-based education, career-focused training, and empowering future-ready professionals.",
-    "image": "https://thebmacademy.com/assets/image/path-to-hero-image.png",
-    "author": {
+    headline:
+      "Award-Winning Leadership: BM Academy’s Path to Shaping Tomorrow’s Skilled Professionals",
+    description:
+      "BM Academy’s award-winning leadership reflects its commitment to skill-based education, career-focused training, and empowering future-ready professionals.",
+    image: "https://thebmacademy.com/assets/image/path-to-hero-image.png",
+    author: {
       "@type": "Person",
-      "name": "BM Academy Founder"
+      name: "BM Academy Founder",
     },
-    "publisher": {
+    publisher: {
       "@type": "Organization",
-      "name": "BM Academy",
-      "logo": {
+      name: "BM Academy",
+      logo: {
         "@type": "ImageObject",
-        "url": "https://thebmacademy.com/assets/blog/logo.png"
-      }
+        url: "https://thebmacademy.com/assets/blog/logo.png",
+      },
     },
-    "datePublished": "2026-01-03",
-    "dateModified": "2026-01-03"
+    datePublished: "2026-01-03",
+    dateModified: "2026-01-03",
   };
 
   // New FAQ Schema added here
   const FAQSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [
+    mainEntity: [
       {
         "@type": "Question",
-        "name": "What makes BM Academy different from other training institutes?",
-        "acceptedAnswer": {
+        name: "What makes BM Academy different from other training institutes?",
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": "BM Academy focuses on hands-on, industry-aligned training, real-world projects, and career-focused learning paths that help learners become job-ready."
-        }
+          text: "BM Academy focuses on hands-on, industry-aligned training, real-world projects, and career-focused learning paths that help learners become job-ready.",
+        },
       },
       {
         "@type": "Question",
-        "name": "Are BM Academy courses suitable for beginners?",
-        "acceptedAnswer": {
+        name: "Are BM Academy courses suitable for beginners?",
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": "Yes. BM Academy offers courses for beginners, students, and working professionals, with structured learning paths based on skill levels."
-        }
+          text: "Yes. BM Academy offers courses for beginners, students, and working professionals, with structured learning paths based on skill levels.",
+        },
       },
       {
         "@type": "Question",
-        "name": "Does BM Academy provide job assistance?",
-        "acceptedAnswer": {
+        name: "Does BM Academy provide job assistance?",
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": "BM Academy supports learners with career guidance, mentorship, and job-oriented training, helping them improve employability and confidence."
-        }
+          text: "BM Academy supports learners with career guidance, mentorship, and job-oriented training, helping them improve employability and confidence.",
+        },
       },
       {
         "@type": "Question",
-        "name": "Are courses available online or offline?",
-        "acceptedAnswer": {
+        name: "Are courses available online or offline?",
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": "BM Academy offers flexible learning options, including online and offline training, depending on the course."
-        }
+          text: "BM Academy offers flexible learning options, including online and offline training, depending on the course.",
+        },
       },
       {
         "@type": "Question",
-        "name": "How can I enrol in a course at BM Academy?",
-        "acceptedAnswer": {
+        name: "How can I enrol in a course at BM Academy?",
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": "You can explore available programs on the website or contact BM Academy directly for course details and enrolment guidance. Visit https://thebmacademy.com/contact"
-        }
-      }
-    ]
+          text: "You can explore available programs on the website or contact BM Academy directly for course details and enrolment guidance. Visit https://thebmacademy.com/contact",
+        },
+      },
+    ],
   };
 
   // --- FAQ ACCORDION LOGIC ---
@@ -165,55 +169,83 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
   // Data for the UI (includes JSX links)
   const faqs = [
     {
-      question: "What makes BM Academy different from other training institutes?",
-      answer: "BM Academy focuses on hands-on, industry-aligned training, real-world projects, and career-focused learning paths that help learners become job-ready."
+      question:
+        "What makes BM Academy different from other training institutes?",
+      answer:
+        "BM Academy focuses on hands-on, industry-aligned training, real-world projects, and career-focused learning paths that help learners become job-ready.",
     },
     {
       question: "Are BM Academy courses suitable for beginners?",
-      answer: "Yes. BM Academy offers courses for beginners, students, and working professionals, with structured learning paths based on skill levels."
+      answer:
+        "Yes. BM Academy offers courses for beginners, students, and working professionals, with structured learning paths based on skill levels.",
     },
     {
       question: "Does BM Academy provide job assistance?",
-      answer: "BM Academy supports learners with career guidance, mentorship, and job-oriented training, helping them improve employability and confidence."
+      answer:
+        "BM Academy supports learners with career guidance, mentorship, and job-oriented training, helping them improve employability and confidence.",
     },
     {
       question: "Are courses available online or offline?",
-      answer: "BM Academy offers flexible learning options, including online and offline training, depending on the course."
+      answer:
+        "BM Academy offers flexible learning options, including online and offline training, depending on the course.",
     },
     {
       question: "How can I enrol in a course at BM Academy?",
       answer: (
         <>
-          You can explore available programs on the website or <a href="https://www.thebmacademy.com/contact.html" className="text-blue-600 underline hover:text-blue-800">contact BM Academy</a> directly for course details and enrolment guidance.
+          You can explore available programs on the website or{" "}
+          <a
+            href="https://www.thebmacademy.com/contact.html"
+            className="text-blue-600 underline hover:text-blue-800"
+          >
+            contact BM Academy
+          </a>{" "}
+          directly for course details and enrolment guidance.
         </>
-      )
-    }
+      ),
+    },
   ];
 
   return (
     <div className="min-h-screen bg-gray-50 font-sans text-gray-800 relative">
       <Helmet>
-        <title>Award-Winning Leadership | BM Academy Shaping Skilled Professionals</title>
-        <meta name="description" content="BM Academy’s award-winning leadership reflects its commitment to skill-based education, career-focused training, and empowering future-ready professionals." />
-        <link rel="canonical" href="https://thebmacademy.com/blog/award-winning-leadership-bm-academy" />
-        
-        <meta property="og:title" content="Award-Winning Leadership: BM Academy’s Path to Shaping Tomorrow’s Skilled Professionals" />
-        <meta property="og:description" content="BM Academy’s award-winning leadership reflects its commitment to skill-based education, career-focused training, and empowering future-ready professionals." />
+        <title>
+          Award-Winning Leadership | BM Academy Shaping Skilled Professionals
+        </title>
+        <meta
+          name="description"
+          content="BM Academy’s award-winning leadership reflects its commitment to skill-based education, career-focused training, and empowering future-ready professionals."
+        />
+        <link
+          rel="canonical"
+          href="https://thebmacademy.com/blog/award-winning-leadership-bm-academy"
+        />
+
+        <meta
+          property="og:title"
+          content="Award-Winning Leadership: BM Academy’s Path to Shaping Tomorrow’s Skilled Professionals"
+        />
+        <meta
+          property="og:description"
+          content="BM Academy’s award-winning leadership reflects its commitment to skill-based education, career-focused training, and empowering future-ready professionals."
+        />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://thebmacademy.com/blog/award-winning-leadership-bm-academy" />
-        <meta property="og:image" content="https://thebmacademy.com/assets/blog/image/path-to-hero-image.png" />
+        <meta
+          property="og:url"
+          content="https://thebmacademy.com/blog/award-winning-leadership-bm-academy"
+        />
+        <meta
+          property="og:image"
+          content="https://thebmacademy.com/assets/blog/image/path-to-hero-image.png"
+        />
         <meta property="og:site_name" content="BM Academy" />
         <meta property="og:locale" content="en_IN" />
 
         {/* Blog Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify(BlogSchema)}
-        </script>
+        <script type="application/ld+json">{JSON.stringify(BlogSchema)}</script>
 
         {/* FAQ Schema Added Here */}
-        <script type="application/ld+json">
-          {JSON.stringify(FAQSchema)}
-        </script>
+        <script type="application/ld+json">{JSON.stringify(FAQSchema)}</script>
 
         <script
           async
@@ -267,15 +299,16 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
               Award Winning Leadership
             </div>
             <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight mb-6">
-              Award-Winning Leadership: BM Academy’s Path to Shaping Tomorrow’s Skilled Professionals
+              Award-Winning Leadership: BM Academy’s Path to Shaping Tomorrow’s
+              Skilled Professionals
             </h1>
 
             {/* Meta Data */}
             <div className="flex items-center flex-wrap gap-4 text-gray-500 text-sm border-b border-gray-200 pb-6 pt-3">
               <div className="flex items-center">
-                <User className="w-4 h-4 mr-2" />
-                <span>BM Academy Founder</span>
-              </div>
+                              <User className="w-4 h-4 mr-2" />
+                               <span><a href="https://www.linkedin.com/in/kamarudeen-b-m-66508657/" target="_blank">Kamarudeen BM</a></span>
+                            </div>
               <div className="flex items-center">
                 <Calendar className="w-4 h-4 mr-2" />
                 <span>Jan 03, 2026</span>
@@ -285,7 +318,7 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
 
           {/* --- Featured Image --- */}
           <div className="mb-8 rounded-xl overflow-hidden shadow-lg bg-gray-200 h-64 md:h-96 w-full flex items-center justify-center relative">
-             {/* Placeholder for "Founder receiving award" - Replace with actual image */}
+            {/* Placeholder for "Founder receiving award" - Replace with actual image */}
             <img
               src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2574&auto=format&fit=crop"
               alt="BM Academy founder receiving an education leadership award for skill-based learning excellence"
@@ -296,15 +329,35 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
 
           {/* --- Blog Content --- */}
           <article className="prose prose-lg max-w-none text-gray-700 space-y-12">
-            
             {/* Intro */}
             <section>
-                <p className="leading-relaxed">
-                    In today’s rapidly evolving job market,<strong> education is no longer just about degrees—it’s about skills, adaptability, and real-world readiness.</strong> BM Academy has consistently stood at the forefront of this transformation, redefining learning through industry-relevant training and <strong><a href="https://www.thebmacademy.com/" target="_blank">career-driven education.</a></strong>
-                </p>
-                <p>
-                    This commitment to excellence was recently recognized when <strong> BM Academy’s founder received a prestigious educational award</strong>, marking a significant milestone in the academy’s journey. The recognition is not just a personal achievement—it reflects BM Academy’s unwavering mission to <strong>shape tomorrow’s skilled professionals.</strong>
-                </p>
+              <p className="leading-relaxed">
+                In today’s rapidly evolving job market,
+                <strong>
+                  {" "}
+                  education is no longer just about degrees—it’s about skills,
+                  adaptability, and real-world readiness.
+                </strong>{" "}
+                BM Academy has consistently stood at the forefront of this
+                transformation, redefining learning through industry-relevant
+                training and{" "}
+                <strong>
+                  <a href="https://www.thebmacademy.com/" target="_blank">
+                    career-driven education.
+                  </a>
+                </strong>
+              </p>
+              <p>
+                This commitment to excellence was recently recognized when{" "}
+                <strong>
+                  {" "}
+                  BM Academy’s founder received a prestigious educational award
+                </strong>
+                , marking a significant milestone in the academy’s journey. The
+                recognition is not just a personal achievement—it reflects BM
+                Academy’s unwavering mission to{" "}
+                <strong>shape tomorrow’s skilled professionals.</strong>
+              </p>
             </section>
 
             {/* Section 2 */}
@@ -313,30 +366,59 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
                 Award-Winning Leadership That Inspires Change
               </h2>
               <div className="my-6 rounded-xl overflow-hidden shadow-md">
-                 <img
-                    src={Cover}
-                    alt="BM Academy founder recognised for excellence in education leadership and social impact"
-                    className="w-full object-cover"
-                 />
+                <img
+                  src={Cover}
+                  alt="BM Academy founder recognised for excellence in education leadership and social impact"
+                  className="w-full object-cover"
+                />
               </div>
               <p>
-                Strong institutions are built on strong leadership. The award received by BM Academy’s founder highlights a vision rooted in:
+                Strong institutions are built on strong leadership. The award
+                received by BM Academy’s founder highlights a vision rooted in:
               </p>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-6 bg-gray-50 p-6 rounded-lg list-none">
-                <li className="flex items-center"><div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div> Quality education</li>
-                <li className="flex items-center"><div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div> Skill-first learning</li>
-                <li className="flex items-center"><div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div> Social responsibility</li>
-                <li className="flex items-center"><div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div> Career empowerment</li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>{" "}
+                  Quality education
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>{" "}
+                  Skill-first learning
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>{" "}
+                  Social responsibility
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>{" "}
+                  Career empowerment
+                </li>
               </ul>
               <p>
-                This recognition reinforces the belief that <strong>education should create opportunities,</strong> bridge skill gaps, and enable learners to thrive in competitive industries.
+                This recognition reinforces the belief that{" "}
+                <strong>education should create opportunities,</strong> bridge
+                skill gaps, and enable learners to thrive in competitive
+                industries.
               </p>
               <p>
-                Under this leadership, BM Academy has grown into a <a href="https://www.thebmacademy.com/about.html" className="text-blue-700">trusted platform for students, professionals, and entrepreneurs</a>  seeking <strong>practical, outcome-oriented learning.</strong>
+                Under this leadership, BM Academy has grown into a{" "}
+                <a
+                  href="https://www.thebmacademy.com/about.html"
+                  className="text-blue-700"
+                >
+                  trusted platform for students, professionals, and
+                  entrepreneurs
+                </a>{" "}
+                seeking <strong>practical, outcome-oriented learning.</strong>
               </p>
               <div className="mt-6">
-                <a href="https://api.whatsapp.com/send/?phone=919944940051&text=Hi%2C%20I%20read%20about%20BM%20Academy%E2%80%99s%20award-winning%20leadership%20and%20want%20course%20details.&type=phone_number&app_absent=0" target="_blank" className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition">
-                    Explore Courses at BM Academy <ArrowRight className="ml-2 w-4 h-4"/>
+                <a
+                  href="https://api.whatsapp.com/send/?phone=919944940051&text=Hi%2C%20I%20read%20about%20BM%20Academy%E2%80%99s%20award-winning%20leadership%20and%20want%20course%20details.&type=phone_number&app_absent=0"
+                  target="_blank"
+                  className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition"
+                >
+                  Explore Courses at BM Academy{" "}
+                  <ArrowRight className="ml-2 w-4 h-4" />
                 </a>
               </div>
             </section>
@@ -352,24 +434,41 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
                 className="rounded-xl mb-6 shadow-sm"
               />
               <p>
-                BM Academy focuses on <a href="https://www.thebmacademy.com/index.html" className="text-blue-600 hover:underline">hands-on, industry-aligned training</a> designed to meet current market demands. Rather than traditional theory-heavy models, the academy emphasizes:
+                BM Academy focuses on{" "}
+                <a
+                  href="https://www.thebmacademy.com/index.html"
+                  className="text-blue-600 hover:underline"
+                >
+                  hands-on, industry-aligned training
+                </a>{" "}
+                designed to meet current market demands. Rather than traditional
+                theory-heavy models, the academy emphasizes:
               </p>
               <div className="grid md:grid-cols-2 gap-4 mt-4">
                 <div className="bg-white p-4 border-l-4 border-green-500 shadow-sm rounded-r-lg">
-                    <h4 className="font-bold text-gray-800">Practical skill development</h4>
+                  <h4 className="font-bold text-gray-800">
+                    Practical skill development
+                  </h4>
                 </div>
                 <div className="bg-white p-4 border-l-4 border-green-500 shadow-sm rounded-r-lg">
-                    <h4 className="font-bold text-gray-800">Real-time projects and case studies</h4>
+                  <h4 className="font-bold text-gray-800">
+                    Real-time projects and case studies
+                  </h4>
                 </div>
                 <div className="bg-white p-4 border-l-4 border-green-500 shadow-sm rounded-r-lg">
-                    <h4 className="font-bold text-gray-800">Industry-expert mentorship</h4>
+                  <h4 className="font-bold text-gray-800">
+                    Industry-expert mentorship
+                  </h4>
                 </div>
                 <div className="bg-white p-4 border-l-4 border-green-500 shadow-sm rounded-r-lg">
-                    <h4 className="font-bold text-gray-800">Career-focused learning paths</h4>
+                  <h4 className="font-bold text-gray-800">
+                    Career-focused learning paths
+                  </h4>
                 </div>
               </div>
               <p className="mt-4 italic text-gray-600">
-                This approach ensures learners are not just certified—but <strong>job-ready and confident.</strong>
+                This approach ensures learners are not just certified—but{" "}
+                <strong>job-ready and confident.</strong>
               </p>
             </section>
 
@@ -384,46 +483,71 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
                 className="rounded-xl mb-6"
               />
               <p>
-                BM Academy offers training programs aligned with fast-growing and future-ready domains, including:
+                BM Academy offers training programs aligned with fast-growing
+                and future-ready domains, including:
               </p>
               <ul className="space-y-3 pl-2">
                 <li className="flex items-start">
-                    <span className="bg-blue-100 text-blue-800 p-1 rounded mr-3 mt-1"><BookOpen className="w-4 h-4"/></span>
-                    <div>
-                        <strong><a href="https://www.thebmacademy.com/Digital.html" className="text-blue-600 hover:underline">Digital Marketing</a></strong>
-                    </div>
+                  <span className="bg-blue-100 text-blue-800 p-1 rounded mr-3 mt-1">
+                    <BookOpen className="w-4 h-4" />
+                  </span>
+                  <div>
+                    <strong>
+                      <a
+                        href="https://www.thebmacademy.com/Digital.html"
+                        className="text-blue-600 hover:underline"
+                      >
+                        Digital Marketing
+                      </a>
+                    </strong>
+                  </div>
                 </li>
                 <li className="flex items-start">
-                    <span className="bg-purple-100 text-purple-800 p-1 rounded mr-3 mt-1"><BookOpen className="w-4 h-4"/></span>
-                    <div>
-                        <strong>Web Development</strong>
-                    </div>
+                  <span className="bg-purple-100 text-purple-800 p-1 rounded mr-3 mt-1">
+                    <BookOpen className="w-4 h-4" />
+                  </span>
+                  <div>
+                    <strong>Web Development</strong>
+                  </div>
                 </li>
                 <li className="flex items-start">
-                    <span className="bg-orange-100 text-orange-800 p-1 rounded mr-3 mt-1"><BookOpen className="w-4 h-4"/></span>
-                    <div>
-                        <strong>Software & IT Skills</strong>
-                    </div>
+                  <span className="bg-orange-100 text-orange-800 p-1 rounded mr-3 mt-1">
+                    <BookOpen className="w-4 h-4" />
+                  </span>
+                  <div>
+                    <strong>Software & IT Skills</strong>
+                  </div>
                 </li>
                 <li className="flex items-start">
-                    <span className="bg-blue-100 text-blue-800 p-1 rounded mr-3 mt-1"><BookOpen className="w-4 h-4"/></span>
-                    <div>
-                        <strong>Professional Certification Programs</strong>
-                    </div>
+                  <span className="bg-blue-100 text-blue-800 p-1 rounded mr-3 mt-1">
+                    <BookOpen className="w-4 h-4" />
+                  </span>
+                  <div>
+                    <strong>Professional Certification Programs</strong>
+                  </div>
                 </li>
                 <li className="flex items-start">
-                    <span className="bg-purple-100 text-purple-800 p-1 rounded mr-3 mt-1"><BookOpen className="w-4 h-4"/></span>
-                    <div>
-                        <strong>Career-oriented short-term courses</strong>
-                    </div>
+                  <span className="bg-purple-100 text-purple-800 p-1 rounded mr-3 mt-1">
+                    <BookOpen className="w-4 h-4" />
+                  </span>
+                  <div>
+                    <strong>Career-oriented short-term courses</strong>
+                  </div>
                 </li>
               </ul>
               <p className="mt-4">
-                Each program is structured to help learners <strong>upgrade skills, improve employability, and achieve career growth.</strong>
+                Each program is structured to help learners{" "}
+                <strong>
+                  upgrade skills, improve employability, and achieve career
+                  growth.
+                </strong>
               </p>
               <div className="mt-6 text-center md:text-left">
-                <button onClick={toggleModal} className="inline-flex items-center px-6 py-3 bg-gray-900 text-white font-bold rounded-lg hover:bg-gray-800 transition">
-                    View Career-Focused Courses
+                <button
+                  onClick={toggleModal}
+                  className="inline-flex items-center px-6 py-3 bg-gray-900 text-white font-bold rounded-lg hover:bg-gray-800 transition"
+                >
+                  View Career-Focused Courses
                 </button>
               </div>
             </section>
@@ -433,26 +557,47 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 Empowering Learners Beyond the Classroom
               </h2>
-              
-                <img 
-                    src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                    alt="BM Academy empowering learners through mentorship and practical guidance"
-                    className="w-full rounded-xl shadow-md"
-                />
-                <div>
-                    <p className="mb-4">
-                        Education at BM Academy <a href="https://blog.thebmacademy.com/" target="_blank" className="text-blue-600 hover:underline">goes beyond courses</a>. The academy actively supports learners through:
-                    </p>
-                    <ul className="space-y-2">
-                        <li className="flex items-center text-gray-700"><Users className="w-4 h-4 mr-2 text-green-500"/> Career guidance and mentorship</li>
-                        <li className="flex items-center text-gray-700"><Users className="w-4 h-4 mr-2 text-green-500"/> Practical exposure to real-world challenges</li>
-                        <li className="flex items-center text-gray-700"><Users className="w-4 h-4 mr-2 text-green-500"/> Skill enhancement workshops</li>
-                        <li className="flex items-center text-gray-700"><Users className="w-4 h-4 mr-2 text-green-500"/> Continuous learning resources</li>
-                    </ul>
-                </div>
-              
+
+              <img
+                src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="BM Academy empowering learners through mentorship and practical guidance"
+                className="w-full rounded-xl shadow-md"
+              />
+              <div>
+                <p className="mb-4">
+                  Education at BM Academy{" "}
+                  <a
+                    href="https://blog.thebmacademy.com/"
+                    target="_blank"
+                    className="text-blue-600 hover:underline"
+                  >
+                    goes beyond courses
+                  </a>
+                  . The academy actively supports learners through:
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-center text-gray-700">
+                    <Users className="w-4 h-4 mr-2 text-green-500" /> Career
+                    guidance and mentorship
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <Users className="w-4 h-4 mr-2 text-green-500" /> Practical
+                    exposure to real-world challenges
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <Users className="w-4 h-4 mr-2 text-green-500" /> Skill
+                    enhancement workshops
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <Users className="w-4 h-4 mr-2 text-green-500" /> Continuous
+                    learning resources
+                  </li>
+                </ul>
+              </div>
+
               <p className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-400">
-                This learner-centric ecosystem ensures that students are supported at every stage—from learning to career progression.
+                This learner-centric ecosystem ensures that students are
+                supported at every stage—from learning to career progression.
               </p>
             </section>
 
@@ -462,80 +607,111 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
                 Recognition That Reflects a Bigger Mission
               </h2>
               <p>
-                The recent award is a testament to BM Academy’s broader <a href="https://www.thebmacademy.com/index.html" className="text-blue-600 hover:underline">impact on education and skill development</a>. It acknowledges:
+                The recent award is a testament to BM Academy’s broader{" "}
+                <a
+                  href="https://www.thebmacademy.com/index.html"
+                  className="text-blue-600 hover:underline"
+                >
+                  impact on education and skill development
+                </a>
+                . It acknowledges:
               </p>
               <ul className="list-disc pl-6 space-y-2 mt-2 mb-6 text-gray-700 marker:text-blue-500">
                 <li>The academy’s contribution to professional education</li>
                 <li>Its role in empowering youth and working professionals</li>
-                <li>A leadership vision focused on long-term societal impact</li>
+                <li>
+                  A leadership vision focused on long-term societal impact
+                </li>
               </ul>
               <p className="font-medium text-gray-900 mb-6">
-                Such recognition strengthens BM Academy’s resolve to <strong>continue innovating, evolving, and delivering meaningful education.</strong>
+                Such recognition strengthens BM Academy’s resolve to{" "}
+                <strong>
+                  continue innovating, evolving, and delivering meaningful
+                  education.
+                </strong>
               </p>
-              <a href="https://api.whatsapp.com/send/?phone=919944940051&text=Hi%2C%20I%20read%20about%20BM%20Academy%E2%80%99s%20award-winning%20leadership%20and%20want%20course%20details.&type=phone_number&app_absent=0" className="w-full md:w-auto px-8 py-3 bg-gradient-to-r from-yellow-500 to-orange-500 text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+              <a
+                href="https://api.whatsapp.com/send/?phone=919944940051&text=Hi%2C%20I%20read%20about%20BM%20Academy%E2%80%99s%20award-winning%20leadership%20and%20want%20course%20details.&type=phone_number&app_absent=0"
+                className="w-full md:w-auto px-8 py-3 bg-gradient-to-r from-yellow-500 to-orange-500 text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-1"
+              >
                 Learn with an Award-Winning Academy
               </a>
             </section>
 
             {/* Section 7 - Looking Ahead */}
             <section>
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                    Looking Ahead: Building Future-Ready Professionals
-                </h2>
-                <img 
-                    src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                    alt="BM Academy empowering future-ready professionals through career-focused education"
-                    className="rounded-xl mb-6 w-full object-cover"
-                />
-                <p>
-                    As industries evolve, BM Academy remains committed to staying ahead of change. With award-winning leadership and a learner-first philosophy, the academy aims to:
-                </p>
-                 <ul className="list-disc pl-6 space-y-2 mt-2 mb-6 text-gray-700 marker:text-blue-500">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                Looking Ahead: Building Future-Ready Professionals
+              </h2>
+              <img
+                src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                alt="BM Academy empowering future-ready professionals through career-focused education"
+                className="rounded-xl mb-6 w-full object-cover"
+              />
+              <p>
+                As industries evolve, BM Academy remains committed to staying
+                ahead of change. With award-winning leadership and a
+                learner-first philosophy, the academy aims to:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 mt-2 mb-6 text-gray-700 marker:text-blue-500">
                 <li>Expand skill-driven programs</li>
                 <li>Strengthen industry collaborations</li>
                 <li>Empower more learners across diverse backgrounds</li>
-                <li>Continue shaping professionals ready for tomorrow’s workforce</li>
+                <li>
+                  Continue shaping professionals ready for tomorrow’s workforce
+                </li>
               </ul>
             </section>
 
             {/* Section 8 - FAQ */}
             <section className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
-      <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-        <Lightbulb className="w-6 h-6 text-yellow-500 mr-2" /> Frequently Asked Questions
-      </h2>
-      
-      <div className="space-y-2">
-        {faqs.map((faq, index) => (
-          <div key={index} className="border-b border-gray-200 last:border-0">
-            <button
-              onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center py-4 text-left focus:outline-none group"
-            >
-              <span className={`font-bold text-lg transition-colors duration-200 ${activeIndex === index ? 'text-blue-600' : 'text-gray-800 group-hover:text-blue-600'}`}>
-                {faq.question}
-              </span>
-              {activeIndex === index ? (
-                <ChevronUp className="w-5 h-5 text-blue-600 min-w-[20px]" />
-              ) : (
-                <ChevronDown className="w-5 h-5 text-gray-400 group-hover:text-blue-600 min-w-[20px]" />
-              )}
-            </button>
-            
-            {/* Answer Section with simple transition logic */}
-            <div 
-              className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                activeIndex === index ? 'max-h-40 opacity-100 pb-4' : 'max-h-0 opacity-0'
-              }`}
-            >
-              <p className="text-gray-600 leading-relaxed">
-                {faq.answer}
-              </p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                <Lightbulb className="w-6 h-6 text-yellow-500 mr-2" />{" "}
+                Frequently Asked Questions
+              </h2>
 
+              <div className="space-y-2">
+                {faqs.map((faq, index) => (
+                  <div
+                    key={index}
+                    className="border-b border-gray-200 last:border-0"
+                  >
+                    <button
+                      onClick={() => toggleFAQ(index)}
+                      className="w-full flex justify-between items-center py-4 text-left focus:outline-none group"
+                    >
+                      <span
+                        className={`font-bold text-lg transition-colors duration-200 ${
+                          activeIndex === index
+                            ? "text-blue-600"
+                            : "text-gray-800 group-hover:text-blue-600"
+                        }`}
+                      >
+                        {faq.question}
+                      </span>
+                      {activeIndex === index ? (
+                        <ChevronUp className="w-5 h-5 text-blue-600 min-w-[20px]" />
+                      ) : (
+                        <ChevronDown className="w-5 h-5 text-gray-400 group-hover:text-blue-600 min-w-[20px]" />
+                      )}
+                    </button>
+
+                    {/* Answer Section with simple transition logic */}
+                    <div
+                      className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                        activeIndex === index
+                          ? "max-h-40 opacity-100 pb-4"
+                          : "max-h-0 opacity-0"
+                      }`}
+                    >
+                      <p className="text-gray-600 leading-relaxed">
+                        {faq.answer}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
           </article>
 
           {/* --- CTA Section --- */}
@@ -544,14 +720,17 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
               🚀 Ready to upgrade your skills and build a future-ready career?
             </h2>
             <h2 className="text-lg mb-8 text-blue-100 leading-relaxed">
-               Explore industry-focused courses and start your learning journey with BM Academy today. Enroll. Upskill. Succeed.
+              Explore industry-focused courses and start your learning journey
+              with BM Academy today. Enroll. Upskill. Succeed.
             </h2>
-             
+
             <div className="flex flex-col md:flex-row justify-center gap-4">
-              <a href="https://www.thebmacademy.com/contact.html" target="_blank"
+              <a
+                href="https://www.thebmacademy.com/contact.html"
+                target="_blank"
                 className="inline-flex justify-center items-center bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-white hover:text-blue-700 transition-colors cursor-pointer"
               >
-                 Enquire about courses
+                Enquire about courses
               </a>
               <a
                 href="https://thebmacademy.com/"
@@ -660,12 +839,12 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
                 </a>
 
                 <a
-                  href="https://www.youtube.com/@BMACADEMYPONDY" target="_blank"
+                  href="https://www.youtube.com/@BMACADEMYPONDY"
+                  target="_blank"
                   className="hover:text-yellow-300 transition"
                 >
                   <Youtube className="w-6 h-6" />
                 </a>
-
               </div>
             </div>
 
@@ -757,7 +936,9 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
                   value={formData.phone}
                   onChange={(e) => {
                     // Allow only digits and limit to 10 characters
-                    const value = e.target.value.replace(/[^0-9]/g, "").slice(0, 10);
+                    const value = e.target.value
+                      .replace(/[^0-9]/g, "")
+                      .slice(0, 10);
                     handleInputChange({ target: { name: "phone", value } });
                   }}
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
@@ -822,4 +1003,4 @@ Hi BM Academy, I would like to book a free counseling session based on your blog
   );
 };
 
-export default AwardWinningLeadership;  
+export default AwardWinningLeadership;
