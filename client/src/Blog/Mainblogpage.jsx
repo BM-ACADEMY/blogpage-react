@@ -74,6 +74,17 @@ const BlogPage = () => {
       avatar: bmlogo,
       link: "/blog/award-winning-leadership-bm-academy",
     },
+    {
+      id: 6,
+      category: "Nation Building",
+      title: "Republic Day 2026: Skill-Based Education | BM Academy",
+      excerpt:"Discover how skill-based education empowers India’s youth and builds a stronger nation. Learn how BM Academy shapes future-ready professionals.",
+      author: "BM Academy",
+      date: "Jan 26, 2026",
+      image: "https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&w=1200&q=80",
+      avatar: bmlogo,
+      link: "/blog/republic-day-2026",
+    },
 
 
   ];

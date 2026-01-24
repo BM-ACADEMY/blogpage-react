@@ -8,6 +8,7 @@ import Pondicherryjobs from "./Blog/Pages/Pondicherryjobs";
 import AIForFullStack from "./Blog/Pages/WhyAISkillsFsd";
 import Futureskills from "./Blog/Pages/Futureskills";
 import Awardwinning from "./Blog/Pages/Awardwinning";
+import RepublicDay2026 from "./Blog/Pages/RepublicDay2026";
 
 export const App = () => {
   return (
@@ -35,6 +36,10 @@ export const App = () => {
         <Route
           path="/blog/award-winning-leadership-bm-academy"
           element={<Awardwinning />}
+        />
+        <Route
+          path="/blog/republic-day-2026"
+          element={<RepublicDay2026 />}
         />
       </Routes>
     </>
