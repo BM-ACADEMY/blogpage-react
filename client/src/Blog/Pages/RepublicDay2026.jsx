@@ -34,15 +34,8 @@ import bmlogo from "../../assets/blog/logo.png"; // Ensure path is correct
 import { Link } from "react-router-dom";
 import "../../Blog/Pages/css/Style.css"; // Ensure path is correct
 import { Helmet } from "react-helmet";
+import photoiamge from "../../assets/blog/photo.png"
 
-// Placeholder images - Please replace with your actual Republic Day assets
-import heroImage from "../../assets/blog/da.jpg"; // Replace with Republic Day visual
-import progressImage from "../../assets/blog/da.jpg"; // Replace with Progress visual
-import classroomImage from "../../assets/blog/da.jpg"; // Replace with Classroom visual
-import trainingImage from "../../assets/blog/da.jpg"; // Replace with Training visual
-import empowermentImage from "../../assets/blog/da.jpg"; // Replace with Empowerment visual
-import academyImage from "../../assets/blog/da.jpg"; // Replace with Academy visual
-import freedomImage from "../../assets/blog/da.jpg"; // Replace with Freedom visual
 
 const RepublicDay2026 = () => {
   // --- STATE FOR MODAL AND FORM ---
@@ -236,7 +229,7 @@ const RepublicDay2026 = () => {
           <div className="mb-8 rounded-xl overflow-hidden shadow-lg bg-gray-200 h-64 md:h-96 w-full flex items-center justify-center relative">
              {/* Decorative Flag Overlay */}
             <img
-              src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&w=1200&q=80"
+              src={photoiamge}
               alt="Republic Day 2026 skill-based education at BM Academy"
               className="w-full h-full object-cover"
             />

@@ -9,6 +9,7 @@ import Bannerimage3 from "../assets/image/new-year-new-skill.jpg";
 import bmlogo from "../assets/blog/logo.png";
 import DA from "../assets/blog/da.jpg";
 import Award from "../assets/image/path-to-hero-image.png";
+import Photo from "../assets/blog/photo.png";
 
 const BlogPage = () => {
   const blogs = [
@@ -81,7 +82,7 @@ const BlogPage = () => {
       excerpt:"Discover how skill-based education empowers India’s youth and builds a stronger nation. Learn how BM Academy shapes future-ready professionals.",
       author: "BM Academy",
       date: "Jan 26, 2026",
-      image: "https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&w=1200&q=80",
+      image: Photo,
       avatar: bmlogo,
       link: "/blog/republic-day-2026",
     },
