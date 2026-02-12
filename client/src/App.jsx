@@ -9,12 +9,14 @@ import AIForFullStack from "./Blog/Pages/WhyAISkillsFsd";
 import Futureskills from "./Blog/Pages/Futureskills";
 import Awardwinning from "./Blog/Pages/Awardwinning";
 import RepublicDay2026 from "./Blog/Pages/RepublicDay2026";
+import AIVideoEditing from "./Blog/Pages/Aivideoediting";
+import ScrollToTop from "./ScrollToTop";
 
 export const App = () => {
   return (
     <>
       <GoogleAnalytics /> {/* <-- THIS tracks route changes */}
-
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<BlogPage />} />
         <Route
@@ -40,6 +42,10 @@ export const App = () => {
         <Route
           path="/blog/republic-day-2026"
           element={<RepublicDay2026 />}
+        />
+        <Route
+          path="/blog/ai-video-editing-2026"
+          element={<AIVideoEditing />}
         />
       </Routes>
     </>

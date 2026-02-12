@@ -10,6 +10,7 @@ import bmlogo from "../assets/blog/logo.png";
 import DA from "../assets/blog/da.jpg";
 import Award from "../assets/image/path-to-hero-image.png";
 import Photo from "../assets/blog/photo.png";
+import Aiblog from "../assets/image/Aiblog.jpg";
 
 const BlogPage = () => {
   const blogs = [
@@ -86,6 +87,18 @@ const BlogPage = () => {
       avatar: bmlogo,
       link: "/blog/republic-day-2026",
     },
+    {
+      id: 7,
+      category: "AI Video Editing",
+      title: "AI Video Editing 2026: What Creators Must Learn | BM Academy",
+      excerpt:"AI video editing is transforming content creation. Learn the essential AI video editing skills creators must master in 2026 with BM Academy.",
+      author: "BM Academy",
+      date: "Feb 12, 2026",
+      image: Aiblog,
+      avatar: bmlogo,
+      link: "/blog/ai-video-editing-2026",
+    },
+
 
 
   ];
