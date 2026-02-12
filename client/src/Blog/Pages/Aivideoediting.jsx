@@ -200,7 +200,7 @@ const AIVideoEditing = () => {
           {/* Header Section */}
           <div className="mb-8">
             <div className="inline-block bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded-full font-semibold uppercase tracking-wide mb-4">
-              Creator Economy 2026
+              AI Video Editing
             </div>
             <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight mb-6">
               The Rise of AI Video Editing: What Creators Must Learn Now | BM Academy
