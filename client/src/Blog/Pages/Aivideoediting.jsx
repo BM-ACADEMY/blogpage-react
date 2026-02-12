@@ -76,7 +76,7 @@ const AIVideoEditing = () => {
     },
     "headline": "AI Video Editing 2026: What Creators Must Learn",
     "description": "AI video editing is transforming content creation. Learn the essential AI video editing skills creators must master in 2026 with BM Academy.",
-    "image": "https://blog.thebmacademy.com/path-to-your-main-image.jpg", // Replace with actual image URL
+    // "image": "https://blog.thebmacademy.com/path-to-your-main-image.jpg",
     "author": {
       "@type": "Organization",
       "name": "BM Academy"
@@ -86,7 +86,7 @@ const AIVideoEditing = () => {
       "name": "BM Academy",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://blog.thebmacademy.com/path-to-your-logo.png" // Replace with actual logo URL
+        // "url": "https://blog.thebmacademy.com/path-to-your-logo.png"
       }
     },
     "datePublished": "2026-01-01",
