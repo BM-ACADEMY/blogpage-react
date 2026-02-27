@@ -233,7 +233,7 @@ const SeoVsGoogleAds = () => {
               </div>
               <div className="flex items-center">
                 <Calendar className="w-4 h-4 mr-2" />
-                <span>Feb 14, 2026</span>
+                <span>Feb 27, 2026</span>
               </div>
             </div>
           </div>
@@ -253,13 +253,10 @@ const SeoVsGoogleAds = () => {
               Introduction to SEO vs Google Ads Courses
             </h2>
             <p className="text-xl leading-relaxed text-gray-600 border-l-2 border-blue-500 pl-4 mb-6">
-              At BM Academy, we help students understand both SEO and Google Ads as part of our structured digital marketing curriculum so they can make the right learning decision based on career goals.
+              At <a href="https://www.thebmacademy.com/" target="_blank" rel="noreferrer" className="text-blue-600 font-bold hover:underline">BM Academy</a>, we help students understand both SEO and Google Ads as part of our structured digital marketing curriculum so they can make the right learning decision based on career goals.
             </p>
             <p className="mb-8">
               If you're looking for complete guidance, our Digital Marketing Course covers both organic and paid strategies step by step.{" "}
-              <a href="https://www.thebmacademy.com/" target="_blank" rel="noreferrer" className="text-blue-600 font-semibold hover:underline">
-                Visit BM Academy
-              </a>
             </p>
 
             {/* Section 1: SEO */}
@@ -273,8 +270,17 @@ const SeoVsGoogleAds = () => {
                 className="rounded-2xl mb-8 shadow-xl w-full"
               />
               <p className="text-lg text-gray-700 mb-6">
-                At BM Academy, students don’t just learn theory — they work on live keyword research, website optimization, and ranking strategies through our practical SEO training modules. This structured SEO course helps beginners build strong fundamentals before moving into advanced paid campaigns.
-              </p>
+  At BM Academy, students don’t just learn theory — they work on live keyword research, website optimization, and ranking strategies through our{" "}
+  <a 
+    href="https://www.thebmacademy.com/Seo.html" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="text-blue-600 font-semibold hover:underline"
+  >
+    Practical SEO Training Program
+  </a>
+  . This structured SEO course helps beginners build strong fundamentals before moving into advanced paid campaigns.
+</p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                 <div className="bg-gray-50 p-6 rounded-xl border border-gray-100">
@@ -336,8 +342,17 @@ const SeoVsGoogleAds = () => {
                 className="rounded-2xl mb-8 shadow-xl w-full"
               />
               <p className="text-lg text-gray-700 mb-6">
-                Our Google Ads training at BM Academy focuses on real campaign creation, budget planning, and conversion tracking so students gain hands-on experience managing paid ads confidently. The course is ideal for those who want to generate instant traffic and leads.
-              </p>
+  Our{" "}
+  <a 
+    href="https://www.thebmacademy.com/Google.html" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="text-blue-600 font-semibold hover:underline"
+  >
+    Google Ads training at BM Academy
+  </a>{" "}
+  focuses on real campaign creation, budget planning, and conversion tracking so students gain hands-on experience managing paid ads confidently. The course is ideal for those who want to generate instant traffic and leads.
+</p>
 
               <div className="bg-gray-50 p-6 rounded-xl border border-gray-100 mb-8">
                 <h3 className="text-lg font-bold text-gray-900 mb-4">What You Learn in Google Ads Training at BM Academy</h3>
@@ -435,8 +450,17 @@ const SeoVsGoogleAds = () => {
                 className="rounded-2xl mb-8 shadow-xl w-full"
               />
               <p className="text-lg text-gray-700 mb-6">
-                If you are unsure which course suits your career goal, BM Academy offers personalized career guidance sessions to help you choose the right path. Our mentors analyze your background and suggest the best starting point.
-              </p>
+  If you are unsure which course suits your career goal, BM Academy offers a personalized{" "}
+  <a 
+    href="https://www.thebmacademy.com/Digital.html" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="text-blue-600 font-semibold hover:underline"
+  >
+    Career Guidance Session
+  </a>{" "}
+  to help you choose the right path. Our mentors analyze your background and suggest the best starting point.
+</p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div className="bg-white p-6 border border-gray-200 rounded-xl shadow-sm border-t-4 border-t-green-500">
@@ -475,8 +499,17 @@ const SeoVsGoogleAds = () => {
                 className="rounded-2xl mb-8 shadow-xl w-full"
               />
               <p className="text-lg text-gray-700 mb-6">
-                At BM Academy, our job-oriented digital marketing training ensures students gain both technical knowledge and practical exposure with placement support. We focus on skill development, tool-based learning, and industry readiness.
-              </p>
+  At BM Academy, our job-oriented{" "}
+  <a 
+    href="https://blog.thebmacademy.com/blog/top-ai-tools-digital-marketing-course-2025" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="text-blue-600 font-semibold hover:underline"
+  >
+    Digital Marketing Training
+  </a>{" "}
+  ensures students gain both technical knowledge and practical exposure with placement support. We focus on skill development, tool-based learning, and industry readiness.
+</p>
 
               <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-100 mb-8">
                 <h3 className="font-bold text-gray-900 text-lg mb-4">At BM Academy, we recommend:</h3>
@@ -560,8 +593,17 @@ const SeoVsGoogleAds = () => {
                     <span className="text-blue-600">Q:</span> Does BM Academy provide practical training in SEO and Google Ads?
                   </h3>
                   <p className="text-gray-700">
-                    Yes. BM Academy provides real-time projects, tool-based training, and hands-on campaign experience to make students job-ready.
-                  </p>
+  Yes.{" "}
+  <a 
+    href="https://www.thebmacademy.com/" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="text-blue-600 font-semibold hover:underline"
+  >
+    BM Academy
+  </a>{" "}
+  provides real-time projects, tool-based training, and hands-on campaign experience to make students job-ready.
+</p>
                 </div>
               </div>
             </section>
