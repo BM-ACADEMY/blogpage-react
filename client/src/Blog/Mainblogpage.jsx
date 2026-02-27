@@ -11,6 +11,8 @@ import DA from "../assets/blog/da.jpg";
 import Award from "../assets/image/path-to-hero-image.png";
 import Photo from "../assets/blog/photo.png";
 import Aiblog from "../assets/image/Aiblog.jpg";
+import seoblog from "../assets/image/seoblog.png";
+import unnamed from "../assets/image/unnamed.jpg";
 
 const BlogPage = () => {
   const blogs = [
@@ -98,7 +100,17 @@ const BlogPage = () => {
       avatar: bmlogo,
       link: "/blog/ai-video-editing-2026",
     },
-
+    {
+      id: 8,
+      category: "Digital Marketing",
+      title: "SEO or Google Ads Course: Which to Learn First at BM Academy?",
+      excerpt: "Confused between SEO and Google Ads? Discover which course to start first at BM Academy for a strong digital marketing career.",
+      author: "BM Academy",
+      date: "Feb 14, 2026",
+      image: unnamed, // Replace this with your actual imported image variable
+      avatar: bmlogo,
+      link: "/blog/seo-or-google-ads-course-which-first",
+    }
 
 
   ];

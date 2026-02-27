@@ -11,6 +11,7 @@ import Awardwinning from "./Blog/Pages/Awardwinning";
 import RepublicDay2026 from "./Blog/Pages/RepublicDay2026";
 import AIVideoEditing from "./Blog/Pages/Aivideoediting";
 import ScrollToTop from "./ScrollToTop";
+import SeoVsGoogleAds from "./Blog/Pages/SeoVsGoogleAds";
 
 export const App = () => {
   return (
@@ -46,6 +47,10 @@ export const App = () => {
         <Route
           path="/blog/ai-video-editing-2026"
           element={<AIVideoEditing />}
+        />
+        <Route
+          path="/blog/seo-or-google-ads-course-which-first"
+          element={<SeoVsGoogleAds />}
         />
       </Routes>
     </>
