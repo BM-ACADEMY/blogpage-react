@@ -267,7 +267,7 @@ const SeoVsGoogleAds = () => {
               <img
                 src="https://images.unsplash.com/photo-1571867424488-4565932edb41?auto=format&fit=crop&w=1200&q=80"
                 alt="SEO training course showing keyword research and organic growth strategy"
-                className="rounded-2xl mb-8 shadow-xl w-full"
+                className="rounded-2xl object-cover mb-8 shadow-xl w-full h-[400px]"
               />
               <p className="text-lg text-gray-700 mb-6">
                 At BM Academy, students don’t just learn theory — they work on live keyword research, website optimization, and ranking strategies through our{" "}
