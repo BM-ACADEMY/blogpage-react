@@ -83,7 +83,7 @@ const SeoVsGoogleAds = () => {
           name="description"
           content="Confused between SEO and Google Ads? Discover which course to start first at BM Academy for a strong digital marketing career."
         />
-        
+
         {/* Canonical Tag */}
         <link rel="canonical" href="https://www.thebmacademy.com/blog/seo-or-google-ads-course-which-first/" />
 
@@ -229,7 +229,7 @@ const SeoVsGoogleAds = () => {
             <div className="flex items-center flex-wrap gap-4 text-gray-500 text-sm border-b border-gray-200 pb-6 pt-3">
               <div className="flex items-center">
                 <User className="w-4 h-4 mr-2" />
-                 <span><a href="https://www.linkedin.com/in/kamarudeen-b-m-66508657/" target="_blank" rel="noreferrer">Kamarudeen BM</a></span>
+                <span><a href="https://www.linkedin.com/in/kamarudeen-b-m-66508657/" target="_blank" rel="noreferrer">Kamarudeen BM</a></span>
               </div>
               <div className="flex items-center">
                 <Calendar className="w-4 h-4 mr-2" />
@@ -270,17 +270,17 @@ const SeoVsGoogleAds = () => {
                 className="rounded-2xl mb-8 shadow-xl w-full"
               />
               <p className="text-lg text-gray-700 mb-6">
-  At BM Academy, students don’t just learn theory — they work on live keyword research, website optimization, and ranking strategies through our{" "}
-  <a 
-    href="https://www.thebmacademy.com/Seo.html" 
-    target="_blank" 
-    rel="noopener noreferrer" 
-    className="text-blue-600 font-semibold hover:underline"
-  >
-    Practical SEO Training Program
-  </a>
-  . This structured SEO course helps beginners build strong fundamentals before moving into advanced paid campaigns.
-</p>
+                At BM Academy, students don’t just learn theory — they work on live keyword research, website optimization, and ranking strategies through our{" "}
+                <a
+                  href="https://www.thebmacademy.com/Seo.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 font-semibold hover:underline"
+                >
+                  Practical SEO Training Program
+                </a>
+                . This structured SEO course helps beginners build strong fundamentals before moving into advanced paid campaigns.
+              </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                 <div className="bg-gray-50 p-6 rounded-xl border border-gray-100">
@@ -305,10 +305,10 @@ const SeoVsGoogleAds = () => {
                   <h3 className="text-lg font-bold text-blue-900 mb-4">Why SEO is the Best First Step</h3>
                   <p className="text-blue-800 mb-3">SEO builds the foundation of digital marketing. It helps you understand:</p>
                   <ul className="space-y-2 mb-4">
-                    <li className="flex items-center gap-2 text-blue-800"><ArrowRight className="w-4 h-4"/> Search intent</li>
-                    <li className="flex items-center gap-2 text-blue-800"><ArrowRight className="w-4 h-4"/> Website structure</li>
-                    <li className="flex items-center gap-2 text-blue-800"><ArrowRight className="w-4 h-4"/> Organic marketing strategy</li>
-                    <li className="flex items-center gap-2 text-blue-800"><ArrowRight className="w-4 h-4"/> Long-term traffic generation</li>
+                    <li className="flex items-center gap-2 text-blue-800"><ArrowRight className="w-4 h-4" /> Search intent</li>
+                    <li className="flex items-center gap-2 text-blue-800"><ArrowRight className="w-4 h-4" /> Website structure</li>
+                    <li className="flex items-center gap-2 text-blue-800"><ArrowRight className="w-4 h-4" /> Organic marketing strategy</li>
+                    <li className="flex items-center gap-2 text-blue-800"><ArrowRight className="w-4 h-4" /> Long-term traffic generation</li>
                   </ul>
                   <p className="text-sm font-semibold text-blue-900 bg-white p-2 rounded">
                     Without SEO knowledge, paid advertising can become expensive and ineffective.
@@ -316,10 +316,8 @@ const SeoVsGoogleAds = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row items-center gap-4">
-                <a href="https://www.thebmacademy.com/Seo.html" target="_blank" rel="noreferrer" className="text-blue-600 font-bold hover:underline">
-                  View Practical SEO Training Program
-                </a>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+
                 <a
                   href={getWhatsappLink("Hi BM Academy Team, I want to start with the SEO course. Please share course details.")}
                   target="_blank"
@@ -342,17 +340,17 @@ const SeoVsGoogleAds = () => {
                 className="rounded-2xl mb-8 shadow-xl w-full"
               />
               <p className="text-lg text-gray-700 mb-6">
-  Our{" "}
-  <a 
-    href="https://www.thebmacademy.com/Google.html" 
-    target="_blank" 
-    rel="noopener noreferrer" 
-    className="text-blue-600 font-semibold hover:underline"
-  >
-    Google Ads training at BM Academy
-  </a>{" "}
-  focuses on real campaign creation, budget planning, and conversion tracking so students gain hands-on experience managing paid ads confidently. The course is ideal for those who want to generate instant traffic and leads.
-</p>
+                Our{" "}
+                <a
+                  href="https://www.thebmacademy.com/Google.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 font-semibold hover:underline"
+                >
+                  Google Ads training at BM Academy
+                </a>{" "}
+                focuses on real campaign creation, budget planning, and conversion tracking so students gain hands-on experience managing paid ads confidently. The course is ideal for those who want to generate instant traffic and leads.
+              </p>
 
               <div className="bg-gray-50 p-6 rounded-xl border border-gray-100 mb-8">
                 <h3 className="text-lg font-bold text-gray-900 mb-4">What You Learn in Google Ads Training at BM Academy</h3>
@@ -375,10 +373,8 @@ const SeoVsGoogleAds = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row items-center gap-4">
-                <a href="https://www.thebmacademy.com/Google.html" target="_blank" rel="noreferrer" className="text-blue-600 font-bold hover:underline">
-                  View Google Ads training at BM Academy
-                </a>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+
                 <a
                   href={getWhatsappLink("Hi BM Academy Team, I’m interested in learning Google Ads. Can you share course details and fees?")}
                   target="_blank"
@@ -395,7 +391,7 @@ const SeoVsGoogleAds = () => {
               <h2 className="text-2xl font-bold text-gray-900 mb-6">
                 SEO vs Google Ads Course – Key Differences Explained
               </h2>
-              
+
               <div className="overflow-x-auto shadow-sm border border-gray-200 rounded-xl mb-6">
                 <table className="w-full text-left text-gray-700">
                   <thead className="bg-gray-100 text-gray-900">
@@ -450,17 +446,17 @@ const SeoVsGoogleAds = () => {
                 className="rounded-2xl mb-8 shadow-xl w-full"
               />
               <p className="text-lg text-gray-700 mb-6">
-  If you are unsure which course suits your career goal, BM Academy offers a personalized{" "}
-  <a 
-    href="https://www.thebmacademy.com/Digital.html" 
-    target="_blank" 
-    rel="noopener noreferrer" 
-    className="text-blue-600 font-semibold hover:underline"
-  >
-    Career Guidance Session
-  </a>{" "}
-  to help you choose the right path. Our mentors analyze your background and suggest the best starting point.
-</p>
+                If you are unsure which course suits your career goal, BM Academy offers a personalized{" "}
+                <a
+                  href="https://www.thebmacademy.com/Digital.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 font-semibold hover:underline"
+                >
+                  Career Guidance Session
+                </a>{" "}
+                to help you choose the right path. Our mentors analyze your background and suggest the best starting point.
+              </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div className="bg-white p-6 border border-gray-200 rounded-xl shadow-sm border-t-4 border-t-green-500">
@@ -475,10 +471,8 @@ const SeoVsGoogleAds = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row items-center gap-4">
-                <a href="https://www.thebmacademy.com/Digital.html" target="_blank" rel="noreferrer" className="text-blue-600 font-bold hover:underline">
-                  Book Digital Marketing Career Guidance Session
-                </a>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+
                 <button
                   onClick={toggleModal}
                   className="inline-flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-full font-bold hover:bg-red-700 transition-all shadow-md"
@@ -499,17 +493,17 @@ const SeoVsGoogleAds = () => {
                 className="rounded-2xl mb-8 shadow-xl w-full"
               />
               <p className="text-lg text-gray-700 mb-6">
-  At BM Academy, our job-oriented{" "}
-  <a 
-    href="https://blog.thebmacademy.com/blog/top-ai-tools-digital-marketing-course-2025" 
-    target="_blank" 
-    rel="noopener noreferrer" 
-    className="text-blue-600 font-semibold hover:underline"
-  >
-    Digital Marketing Training
-  </a>{" "}
-  ensures students gain both technical knowledge and practical exposure with placement support. We focus on skill development, tool-based learning, and industry readiness.
-</p>
+                At BM Academy, our job-oriented{" "}
+                <a
+                  href="https://blog.thebmacademy.com/blog/top-ai-tools-digital-marketing-course-2025"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 font-semibold hover:underline"
+                >
+                  Digital Marketing Training
+                </a>{" "}
+                ensures students gain both technical knowledge and practical exposure with placement support. We focus on skill development, tool-based learning, and industry readiness.
+              </p>
 
               <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-100 mb-8">
                 <h3 className="font-bold text-gray-900 text-lg mb-4">At BM Academy, we recommend:</h3>
@@ -532,10 +526,8 @@ const SeoVsGoogleAds = () => {
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row items-center gap-4">
-                <a href="https://blog.thebmacademy.com/blog/top-ai-tools-digital-marketing-course-2025" target="_blank" rel="noreferrer" className="text-blue-600 font-bold hover:underline">
-                  Read more on Career Guidance
-                </a>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+
                 <button
                   onClick={toggleModal}
                   className="inline-flex items-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-full font-bold hover:bg-indigo-700 transition-all shadow-md"
@@ -550,7 +542,7 @@ const SeoVsGoogleAds = () => {
               <h2 className="text-2xl font-bold text-gray-900 mb-6">
                 Frequently Asked Questions About SEO and Google Ads Courses
               </h2>
-              
+
               <div className="space-y-6">
                 <div className="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
                   <h3 className="font-bold text-gray-900 text-lg mb-2 flex gap-2">
@@ -593,17 +585,17 @@ const SeoVsGoogleAds = () => {
                     <span className="text-blue-600">Q:</span> Does BM Academy provide practical training in SEO and Google Ads?
                   </h3>
                   <p className="text-gray-700">
-  Yes.{" "}
-  <a 
-    href="https://www.thebmacademy.com/" 
-    target="_blank" 
-    rel="noopener noreferrer" 
-    className="text-blue-600 font-semibold hover:underline"
-  >
-    BM Academy
-  </a>{" "}
-  provides real-time projects, tool-based training, and hands-on campaign experience to make students job-ready.
-</p>
+                    Yes.{" "}
+                    <a
+                      href="https://www.thebmacademy.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 font-semibold hover:underline"
+                    >
+                      BM Academy
+                    </a>{" "}
+                    provides real-time projects, tool-based training, and hands-on campaign experience to make students job-ready.
+                  </p>
                 </div>
               </div>
             </section>
@@ -657,7 +649,7 @@ const SeoVsGoogleAds = () => {
             <h3 className="font-bold text-gray-900 mb-4 uppercase text-xs tracking-wider">
               About BM Academy
             </h3>
-            
+
             <div className="flex items-center space-x-4">
               <div className="w-20 h-20 rounded-full flex items-center justify-center border-2 border-gray-700 font-bold text-xl overflow-hidden">
                 <img
@@ -666,12 +658,12 @@ const SeoVsGoogleAds = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-            
+
               <div>
                 <p className="font-bold text-gray-900 text-lg">BM Academy</p>
               </div>
             </div>
-            
+
             <p className="text-sm text-gray-600 mt-4">
               BM Academy offers hands-on training in courses like Digital
               Marketing, Web Development, and Cloud Computing, designed to equip
@@ -680,7 +672,7 @@ const SeoVsGoogleAds = () => {
               achieve professional growth.
             </p>
           </div>
-            
+
           {/* Quick Contact */}
           <div className="bg-green-50 p-6 rounded-xl border border-gray-200">
             <h3 className="font-bold text-green-800 mb-2">Have Questions?</h3>
@@ -698,100 +690,100 @@ const SeoVsGoogleAds = () => {
       </div>
 
       {/* --- Footer (Standard Design) --- */}
-            <footer className="footer">
-              <div className="footer-container">
-                <div className="footer-grid">
-                  <div className="footer-about">
-                    <img src={Logo} alt="BM Academy Logo" className="footer-logo" />
-                    <p className="footer-text">
-                      BM Academy offers hands-on training in courses like Digital
-                      Marketing, Web Development, and Cloud Computing, designed to
-                      equip students with essential skills for today's industries.
-                      With expert guidance and career support, we help you unlock your
-                      potential and achieve professional growth.
-                    </p>
-                    <div className="footer-social flex items-center gap-4 text-white">
-                      <a
-                        href="https://www.facebook.com/people/BM-Academy/61566753898165/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-yellow-300 transition"
-                      >
-                        <Facebook className="w-6 h-6" />
-                      </a>
-      
-                      <a
-                        href="https://www.instagram.com/bmacademypondy/?utm_source=ig_embed&ig_rid=1b7aaffb-d4b9-490c-affe-5c583afc19cb"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-yellow-300 transition"
-                      >
-                        <Instagram className="w-6 h-6" />
-                      </a>
-      
-                      <a
-                        href="https://www.linkedin.com/company/106463432/admin/dashboard/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-yellow-300 transition"
-                      >
-                        <Linkedin className="w-6 h-6" />
-                      </a>
-                      <a
-                        href="mailto:admin@abmgroups.org "
-                        className="hover:text-yellow-300 transition"
-                      >
-                        <Mail className="w-6 h-6" />
-                      </a>
-      
-                      <a
-                        href="https://www.youtube.com/@BMACADEMYPONDY"
-                        target="_blank"
-                        className="hover:text-yellow-300 transition"
-                      >
-                        <Youtube className="w-6 h-6" />
-                      </a>
-                    </div>
-                  </div>
-      
-                  <div className="footer-section">
-                    <h3 className="footer-title">Contact Us</h3>
-                    <ul className="footer-list">
-                      <li>
-                        <span className="label">Phone:</span>
-                        <a href="tel:+919944940051" className="contact-link">
-                          +91 99449 40051
-                        </a>
-                      </li>
-      
-                      <li>
-                        <span className="label">Address:</span>
-                        <a className="contact-link">
-                          No: 252, 2nd Floor, M G Road, Kottakuppam, Vanur, Tamil Nadu
-                          605104
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-      
-                <div className="footer-bottom">
-                  <p>
-                    &copy; <span>{new Date().getFullYear()}</span>
-                    <a
-                      href="https://bmtechx.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="footer-link"
-                    >
-                      {" "}
-                      BMTechx.in
-                    </a>
-                    . All Rights Reserved.
-                  </p>
-                </div>
+      <footer className="footer">
+        <div className="footer-container">
+          <div className="footer-grid">
+            <div className="footer-about">
+              <img src={Logo} alt="BM Academy Logo" className="footer-logo" />
+              <p className="footer-text">
+                BM Academy offers hands-on training in courses like Digital
+                Marketing, Web Development, and Cloud Computing, designed to
+                equip students with essential skills for today's industries.
+                With expert guidance and career support, we help you unlock your
+                potential and achieve professional growth.
+              </p>
+              <div className="footer-social flex items-center gap-4 text-white">
+                <a
+                  href="https://www.facebook.com/people/BM-Academy/61566753898165/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-yellow-300 transition"
+                >
+                  <Facebook className="w-6 h-6" />
+                </a>
+
+                <a
+                  href="https://www.instagram.com/bmacademypondy/?utm_source=ig_embed&ig_rid=1b7aaffb-d4b9-490c-affe-5c583afc19cb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-yellow-300 transition"
+                >
+                  <Instagram className="w-6 h-6" />
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/company/106463432/admin/dashboard/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-yellow-300 transition"
+                >
+                  <Linkedin className="w-6 h-6" />
+                </a>
+                <a
+                  href="mailto:admin@abmgroups.org "
+                  className="hover:text-yellow-300 transition"
+                >
+                  <Mail className="w-6 h-6" />
+                </a>
+
+                <a
+                  href="https://www.youtube.com/@BMACADEMYPONDY"
+                  target="_blank"
+                  className="hover:text-yellow-300 transition"
+                >
+                  <Youtube className="w-6 h-6" />
+                </a>
               </div>
-            </footer>
+            </div>
+
+            <div className="footer-section">
+              <h3 className="footer-title">Contact Us</h3>
+              <ul className="footer-list">
+                <li>
+                  <span className="label">Phone:</span>
+                  <a href="tel:+919944940051" className="contact-link">
+                    +91 99449 40051
+                  </a>
+                </li>
+
+                <li>
+                  <span className="label">Address:</span>
+                  <a className="contact-link">
+                    No: 252, 2nd Floor, M G Road, Kottakuppam, Vanur, Tamil Nadu
+                    605104
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="footer-bottom">
+            <p>
+              &copy; <span>{new Date().getFullYear()}</span>
+              <a
+                href="https://bmtechx.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-link"
+              >
+                {" "}
+                BMTechx.in
+              </a>
+              . All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
 
       {/* --- Counseling Modal --- */}
       {isModalOpen && (
