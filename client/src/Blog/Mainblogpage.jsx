@@ -13,6 +13,8 @@ import Photo from "../assets/blog/photo.png";
 import Aiblog from "../assets/image/Aiblog.jpg";
 import seoblog from "../assets/image/seoblog.png";
 import unnamed from "../assets/image/unnamed.jpg";
+// Add this import for the new SEO vs PPC blog banner
+import seovsppcBanner from "../assets/image/Seovsppc2.jpg"; // ← Make sure this file exists in your project
 
 const BlogPage = () => {
   const blogs = [
@@ -66,12 +68,12 @@ const BlogPage = () => {
       avatar: bmlogo,
       link: "/blog/new-year-new-skill",
     },
-
     {
       id: 5,
       category: "Award Winning Leadership",
       title: "Award Winning Leadership | BM Academy’s Path to Shaping Tomorrow’s Skilled Professionals",
-      excerpt:"BM Academy’s award-winning leadership reflects its commitment to skill-based education, career-focused training, and empowering future-ready professionals.",
+      excerpt:
+        "BM Academy’s award-winning leadership reflects its commitment to skill-based education, career-focused training, and empowering future-ready professionals.",
       author: "BM Academy",
       date: "Jan 06, 2026",
       image: Award,
@@ -82,7 +84,8 @@ const BlogPage = () => {
       id: 6,
       category: "Nation Building",
       title: "Republic Day 2026: Skill-Based Education | BM Academy",
-      excerpt:"Discover how skill-based education empowers India’s youth and builds a stronger nation. Learn how BM Academy shapes future-ready professionals.",
+      excerpt:
+        "Discover how skill-based education empowers India’s youth and builds a stronger nation. Learn how BM Academy shapes future-ready professionals.",
       author: "BM Academy",
       date: "Jan 26, 2026",
       image: Photo,
@@ -93,7 +96,8 @@ const BlogPage = () => {
       id: 7,
       category: "AI Video Editing",
       title: "AI Video Editing 2026: What Creators Must Learn | BM Academy",
-      excerpt:"AI video editing is transforming content creation. Learn the essential AI video editing skills creators must master in 2026 with BM Academy.",
+      excerpt:
+        "AI video editing is transforming content creation. Learn the essential AI video editing skills creators must master in 2026 with BM Academy.",
       author: "BM Academy",
       date: "Feb 12, 2026",
       image: Aiblog,
@@ -104,15 +108,27 @@ const BlogPage = () => {
       id: 8,
       category: "Digital Marketing",
       title: "SEO or Google Ads Course: Which to Learn First at BM Academy?",
-      excerpt: "Confused between SEO and Google Ads? Discover which course to start first at BM Academy for a strong digital marketing career.",
+      excerpt:
+        "Confused between SEO and Google Ads? Discover which course to start first at BM Academy for a strong digital marketing career.",
       author: "BM Academy",
       date: "Feb 14, 2026",
-      image: unnamed, // Replace this with your actual imported image variable
+      image: unnamed,
       avatar: bmlogo,
       link: "/blog/seo-or-google-ads-course-which-first",
-    }
-
-
+    },
+    {
+      id: 9,
+      category: "Digital Marketing",
+      title:
+        "SEO vs PPC Salary Comparison in India – BM Academy Career Guide",
+      excerpt:
+        "Discover SEO vs PPC salary comparison in India. BM Academy explains which digital marketing career pays more and offers better growth in 2026.",
+      author: "BM Academy",
+      date: "Mar 09, 2026",
+      image: seovsppcBanner,
+      avatar: bmlogo,
+      link: "/blog/seo-vs-ppc-salary-india",
+    },
   ];
 
   const pageHeadline = "Our Latest Blogs";

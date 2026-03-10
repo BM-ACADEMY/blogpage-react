@@ -12,6 +12,7 @@ import RepublicDay2026 from "./Blog/Pages/RepublicDay2026";
 import AIVideoEditing from "./Blog/Pages/Aivideoediting";
 import ScrollToTop from "./ScrollToTop";
 import SeoVsGoogleAds from "./Blog/Pages/SeoVsGoogleAds";
+import SeoVsPpcSalary from "./Blog/Pages/SeoVsPpcsalary";
 
 export const App = () => {
   return (
@@ -51,6 +52,10 @@ export const App = () => {
         <Route
           path="/blog/seo-or-google-ads-course-which-first"
           element={<SeoVsGoogleAds />}
+        />
+        <Route
+          path="/blog/seo-vs-ppc-salary-india"
+          element={<SeoVsPpcSalary />}
         />
       </Routes>
     </>
