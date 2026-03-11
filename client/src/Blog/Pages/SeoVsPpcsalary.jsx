@@ -34,7 +34,12 @@ import bmlogo from "../../assets/blog/logo.png";
 import { Link } from "react-router-dom";
 import "../../Blog/Pages/css/Style.css";
 import { Helmet } from "react-helmet";
-
+import headerImage from '../../assets/image/header 1.png';
+import seo from '../../assets/image/seo.png';
+import ppc from '../../assets/image/ppc.jpg';
+import seovsppc3 from '../../assets/image/seovsppc3.jpg';
+import ppccost from '../../assets/image/ppccost.jpg';
+import seocareer from '../../assets/image/seocareer.jpg';
 import coverimage from "../../assets/blog/da.jpg"; // Hero Image placeholder
 
 const SeoVsPpcSalary = () => {
@@ -248,11 +253,11 @@ const SeoVsPpcSalary = () => {
 
           {/* Image 1: Hero */}
           <div className="mb-8 rounded-xl overflow-hidden shadow-lg bg-gray-200 h-64 md:h-96 w-full flex items-center justify-center">
-            <img
-              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80"
-              alt="SEO vs PPC salary comparison in India banner image for BM Academy digital marketing career guide"
-              className="w-full h-full object-cover"
-            />
+         <img
+  src={headerImage}
+  alt="SEO vs PPC salary comparison in India banner image for BM Academy digital marketing career guide"
+  className="w- h-800px object-cover"
+/>
           </div>
 
           <article className="prose prose-lg max-w-none text-gray-700">
@@ -272,13 +277,14 @@ const SeoVsPpcSalary = () => {
               </a>
               , we often get this question from students:
             </p>
-            <p className="text-xl leading-relaxed text-gray-600 border-l-2 border-blue-500 pl-4 mb-6">
-              👉 “Which career pays more – SEO or PPC?”
-            </p>
+            <p className="text-xl leading-relaxed text-gray-600 border-l-2 border-blue-500 pl-4 mb-6 italic">
+  👉 “Which career pays more – SEO or PPC?”
+</p>
             <p className="mb-8">
               Both SEO (Search Engine Optimization) and PPC (Pay-Per-Click Advertising) are powerful digital marketing skills. However, when it comes to salary, growth speed, and long-term opportunities, there are important differences.
-              In this complete guide by BM Academy, we break down:
+
             </p>
+            <p>In this complete guide by BM Academy, we break down:</p>
             <ul className="space-y-3 mb-8">
               <li className="flex items-start gap-3 text-gray-800 font-medium">
                 <CheckCircle2 className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
@@ -308,7 +314,7 @@ const SeoVsPpcSalary = () => {
                 What is SEO?
               </h2>
               <img
-                src="https://images.unsplash.com/photo-1571867424488-4565932edb41?auto=format&fit=crop&w=1200&q=80"
+                src={seo}
                 alt="SEO training concept showing website optimization and organic traffic growth for digital marketing students"
                 className="rounded-2xl object-cover mb-8 shadow-xl w-full h-[400px]"
               />
@@ -376,7 +382,7 @@ const SeoVsPpcSalary = () => {
                 What is PPC?
               </h2>
               <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
+                src={ppc}
                 alt="PPC campaign management dashboard showing Google Ads performance and ROI optimization"
                 className="rounded-2xl mb-8 shadow-xl w-full"
               />
@@ -444,7 +450,7 @@ const SeoVsPpcSalary = () => {
                 SEO vs PPC Salary in India (2026 Updated Data)
               </h2>
               <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
+                src={seovsppc3}
                 alt="SEO vs PPC salary comparison chart in India showing entry level to senior level growth"
                 className="rounded-2xl mb-8 shadow-xl w-full"
               />
@@ -498,18 +504,17 @@ const SeoVsPpcSalary = () => {
               </ul>
               <p className="text-lg text-gray-700 mb-6">
                 👉 At senior levels, both SEO and PPC offer strong income potential, especially when combined with analytics and strategy skills.
-                At BM Academy, Pondicherry, we train students in both SEO and PPC with practical projects and placement guidance to help you secure high-paying roles.
               </p>
-              <p className="mb-6">
-                <a
+              <p>     <a
                   href="https://www.thebmacademy.com/Digital.html"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 font-semibold hover:underline"
+                  className="text-black-600 font-semibold hover:underline"
                 >
-                  Digital Marketing Course in Pondicherry
-                </a>
-              </p>
+                  At BM Academy, Pondicherry,
+                </a> we train students in both SEO and PPC with practical projects and placement guidance to help you secure high-paying roles.
+</p>
+
             </section>
 
             {/* Section 4: Why PPC Often Pays More */}
@@ -518,7 +523,7 @@ const SeoVsPpcSalary = () => {
                 Why PPC Often Pays More
               </h2>
               <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
+                src={ppccost}
                 alt="Performance marketing ROI concept showing why PPC salaries grow faster"
                 className="rounded-2xl mb-8 shadow-xl w-full"
               />
@@ -573,14 +578,15 @@ const SeoVsPpcSalary = () => {
                 Why SEO Is Still a Powerful Career Choice
               </h2>
               <img
-                src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80"
+                src={seocareer}
                 alt="Organic SEO growth strategy illustration showing long-term digital marketing success"
                 className="rounded-2xl mb-8 shadow-xl w-full"
               />
               <p className="text-lg text-gray-700 mb-6">
                 Even if PPC may grow faster initially, SEO remains a strong and stable career option.
-                Benefits of choosing SEO:
+
               </p>
+              <p>  Benefits of choosing SEO:</p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3 text-gray-800 font-medium">
                   <CheckCircle2 className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
@@ -680,11 +686,7 @@ const SeoVsPpcSalary = () => {
               <h2 className="text-2xl font-bold text-gray-900 mb-6">
                 SEO vs PPC – Quick Comparison
               </h2>
-              <img
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80"
-                alt="SEO vs PPC course comparison for digital marketing beginners"
-                className="rounded-2xl mb-8 shadow-xl w-full"
-              />
+
 
               <div className="overflow-x-auto shadow-sm border border-gray-200 rounded-xl mb-6">
                 <table className="w-full text-left text-gray-700">
@@ -759,15 +761,16 @@ const SeoVsPpcSalary = () => {
               <p className="text-lg text-gray-700 mb-6">
                 If you want quick performance-driven growth, PPC might be ideal.
                 If you prefer long-term organic strategy, SEO is a powerful career choice.
-                Start your journey today with BM Academy’s industry-aligned  <a
+
+              </p>
+              <p className="text-lg text-gray-700 mb-6">  Start your journey today with BM Academy’s industry-aligned  <a
                   href="https://blog.thebmacademy.com/blog/new-year-new-skill"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-black-600 font-semibold hover:underline"
                 >
                   digital marketing training programs.
-                </a>
-              </p>
+                </a></p>
 
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
