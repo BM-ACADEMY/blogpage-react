@@ -34,7 +34,7 @@ import bmlogo from "../../assets/blog/logo.png";
 import { Link } from "react-router-dom";
 import "../../Blog/Pages/css/Style.css";
 import { Helmet } from "react-helmet";
-import headerImage from '../../assets/image/header 1.png';
+import headerImage from '../../assets/image/seoppc.jpg';
 import seo from '../../assets/image/seo.png';
 import ppc from '../../assets/image/ppc.jpg';
 import seovsppc3 from '../../assets/image/seovsppc3.jpg';
